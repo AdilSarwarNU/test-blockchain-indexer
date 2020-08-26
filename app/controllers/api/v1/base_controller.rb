@@ -4,7 +4,7 @@ class Api::V1::BaseController < ActionController::API
 
   def authenticate_request!
     begin
-      payload = JsonWebToken.decode(header)
+      payload = JsonWebToken.decode(auth_token)
       @current_user = User.find_by_id(payload["sub"])
     rescue ActiveRecord::RecordNotFound => e
       render json: {errors: e.message}, status: :unauthorized
