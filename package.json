@@ -2,6 +2,8 @@
   "name": "react-rails-example-app",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
     "@rails/webpacker": "^3.0.1",
     "babel-preset-react": "^6.24.1",
     "prop-types": "^15.6.0",

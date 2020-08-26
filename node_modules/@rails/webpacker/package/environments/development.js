@@ -1,46 +1,47 @@
-const Environment = require('../environment')
-const { dev_server } = require('../config')
-const assetHost = require('../asset_host')
 const webpack = require('webpack')
+const Base = require('./base')
+const devServer = require('../dev_server')
+const { outputPath: contentBase, publicPath } = require('../config')
 
-module.exports = class extends Environment {
+module.exports = class extends Base {
   constructor() {
     super()
 
-    if (dev_server.hmr) {
-      this.plugins.set('HotModuleReplacement', new webpack.HotModuleReplacementPlugin())
-      this.plugins.set('NamedModules', new webpack.NamedModulesPlugin())
+    if (devServer.hmr) {
+      this.plugins.append('HotModuleReplacement', new webpack.HotModuleReplacementPlugin())
+      this.plugins.append('NamedModules', new webpack.NamedModulesPlugin())
+      this.config.output.filename = '[name]-[hash].js'
     }
-  }
 
-  toWebpackConfig() {
-    const result = super.toWebpackConfig()
-    if (dev_server.hmr) {
-      result.output.filename = '[name]-[hash].js'
-    }
-    result.output.pathinfo = true
-    result.devtool = 'cheap-eval-source-map'
-    result.devServer = {
-      host: dev_server.host,
-      port: dev_server.port,
-      https: dev_server.https,
-      hot: dev_server.hmr,
-      contentBase: assetHost.path,
-      publicPath: assetHost.publicPath,
-      clientLogLevel: 'none',
-      compress: true,
-      historyApiFallback: true,
-      headers: {
-        'Access-Control-Allow-Origin': '*'
+    this.config.merge({
+      devtool: 'cheap-module-source-map',
+      output: {
+        pathinfo: true
       },
-      overlay: true,
-      watchOptions: {
-        ignored: /node_modules/
-      },
-      stats: {
-        errorDetails: true
+      devServer: {
+        clientLogLevel: 'none',
+        compress: devServer.compress,
+        quiet: devServer.quiet,
+        disableHostCheck: devServer.disable_host_check,
+        host: devServer.host,
+        port: devServer.port,
+        https: devServer.https,
+        hot: devServer.hmr,
+        contentBase,
+        inline: devServer.inline,
+        useLocalIp: devServer.use_local_ip,
+        public: devServer.public,
+        publicPath,
+        historyApiFallback: {
+          disableDotRule: true
+        },
+        headers: devServer.headers,
+        overlay: devServer.overlay,
+        stats: {
+          errorDetails: true
+        },
+        watchOptions: devServer.watch_options
       }
-    }
-    return result
+    })
   }
 }
