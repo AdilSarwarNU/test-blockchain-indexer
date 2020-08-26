@@ -1,94 +1,16 @@
-Started GET "/welcome/index" for ::1 at 2020-08-26 17:58:19 +0500
+Started GET "/welcome/index" for ::1 at 2020-08-26 21:21:50 +0500
 Processing by WelcomeController#index as HTML
   Rendering welcome/index.html.erb within layouts/application
 [Webpacker] Compiling…
 [Webpacker] Compiled all packs in /Users/abubakar/Desktop/react-rails-example-app/public/packs
-  Rendered welcome/index.html.erb within layouts/application (3546.7ms)
-Completed 200 OK in 6609ms (Views: 6440.1ms)
+  Rendered welcome/index.html.erb within layouts/application (3262.2ms)
+Completed 200 OK in 5118ms (Views: 4941.3ms)
 
 
-Started GET "/welcome/index" for ::1 at 2020-08-26 18:00:38 +0500
+Started GET "/welcome/index" for ::1 at 2020-08-26 21:24:23 +0500
 Processing by WelcomeController#index as HTML
   Rendering welcome/index.html.erb within layouts/application
-[Webpacker] Compiling…
-[Webpacker] Compilation failed:
-/Users/abubakar/.rvm/rubies/ruby-2.5.7/lib/ruby/site_ruby/2.5.0/bundler/spec_set.rb:91:in `block in materialize': Could not find rake-12.1.0 in any of the sources (Bundler::GemNotFound)
-	from /Users/abubakar/.rvm/rubies/ruby-2.5.7/lib/ruby/site_ruby/2.5.0/bundler/spec_set.rb:85:in `map!'
-	from /Users/abubakar/.rvm/rubies/ruby-2.5.7/lib/ruby/site_ruby/2.5.0/bundler/spec_set.rb:85:in `materialize'
-	from /Users/abubakar/.rvm/rubies/ruby-2.5.7/lib/ruby/site_ruby/2.5.0/bundler/definition.rb:170:in `specs'
-	from /Users/abubakar/.rvm/rubies/ruby-2.5.7/lib/ruby/site_ruby/2.5.0/bundler/definition.rb:237:in `specs_for'
-	from /Users/abubakar/.rvm/rubies/ruby-2.5.7/lib/ruby/site_ruby/2.5.0/bundler/definition.rb:226:in `requested_specs'
-	from /Users/abubakar/.rvm/rubies/ruby-2.5.7/lib/ruby/site_ruby/2.5.0/bundler/runtime.rb:108:in `block in definition_method'
-	from /Users/abubakar/.rvm/rubies/ruby-2.5.7/lib/ruby/site_ruby/2.5.0/bundler/runtime.rb:20:in `setup'
-	from /Users/abubakar/.rvm/rubies/ruby-2.5.7/lib/ruby/site_ruby/2.5.0/bundler.rb:107:in `setup'
-	from /Users/abubakar/.rvm/rubies/ruby-2.5.7/lib/ruby/site_ruby/2.5.0/bundler/setup.rb:20:in `<top (required)>'
-	from /Users/abubakar/.rvm/rubies/ruby-2.5.7/lib/ruby/site_ruby/2.5.0/rubygems/core_ext/kernel_require.rb:54:in `require'
-	from /Users/abubakar/.rvm/rubies/ruby-2.5.7/lib/ruby/site_ruby/2.5.0/rubygems/core_ext/kernel_require.rb:54:in `require'
-
-
-[Webpacker] Compiling…
-[Webpacker] Compilation failed:
-/Users/abubakar/.rvm/rubies/ruby-2.5.7/lib/ruby/site_ruby/2.5.0/bundler/spec_set.rb:91:in `block in materialize': Could not find rake-12.1.0 in any of the sources (Bundler::GemNotFound)
-	from /Users/abubakar/.rvm/rubies/ruby-2.5.7/lib/ruby/site_ruby/2.5.0/bundler/spec_set.rb:85:in `map!'
-	from /Users/abubakar/.rvm/rubies/ruby-2.5.7/lib/ruby/site_ruby/2.5.0/bundler/spec_set.rb:85:in `materialize'
-	from /Users/abubakar/.rvm/rubies/ruby-2.5.7/lib/ruby/site_ruby/2.5.0/bundler/definition.rb:170:in `specs'
-	from /Users/abubakar/.rvm/rubies/ruby-2.5.7/lib/ruby/site_ruby/2.5.0/bundler/definition.rb:237:in `specs_for'
-	from /Users/abubakar/.rvm/rubies/ruby-2.5.7/lib/ruby/site_ruby/2.5.0/bundler/definition.rb:226:in `requested_specs'
-	from /Users/abubakar/.rvm/rubies/ruby-2.5.7/lib/ruby/site_ruby/2.5.0/bundler/runtime.rb:108:in `block in definition_method'
-	from /Users/abubakar/.rvm/rubies/ruby-2.5.7/lib/ruby/site_ruby/2.5.0/bundler/runtime.rb:20:in `setup'
-	from /Users/abubakar/.rvm/rubies/ruby-2.5.7/lib/ruby/site_ruby/2.5.0/bundler.rb:107:in `setup'
-	from /Users/abubakar/.rvm/rubies/ruby-2.5.7/lib/ruby/site_ruby/2.5.0/bundler/setup.rb:20:in `<top (required)>'
-	from /Users/abubakar/.rvm/rubies/ruby-2.5.7/lib/ruby/site_ruby/2.5.0/rubygems/core_ext/kernel_require.rb:54:in `require'
-	from /Users/abubakar/.rvm/rubies/ruby-2.5.7/lib/ruby/site_ruby/2.5.0/rubygems/core_ext/kernel_require.rb:54:in `require'
-
-
-[Webpacker] Compiling…
-[Webpacker] Compilation failed:
-/Users/abubakar/.rvm/rubies/ruby-2.5.7/lib/ruby/site_ruby/2.5.0/bundler/spec_set.rb:91:in `block in materialize': Could not find rake-12.1.0 in any of the sources (Bundler::GemNotFound)
-	from /Users/abubakar/.rvm/rubies/ruby-2.5.7/lib/ruby/site_ruby/2.5.0/bundler/spec_set.rb:85:in `map!'
-	from /Users/abubakar/.rvm/rubies/ruby-2.5.7/lib/ruby/site_ruby/2.5.0/bundler/spec_set.rb:85:in `materialize'
-	from /Users/abubakar/.rvm/rubies/ruby-2.5.7/lib/ruby/site_ruby/2.5.0/bundler/definition.rb:170:in `specs'
-	from /Users/abubakar/.rvm/rubies/ruby-2.5.7/lib/ruby/site_ruby/2.5.0/bundler/definition.rb:237:in `specs_for'
-	from /Users/abubakar/.rvm/rubies/ruby-2.5.7/lib/ruby/site_ruby/2.5.0/bundler/definition.rb:226:in `requested_specs'
-	from /Users/abubakar/.rvm/rubies/ruby-2.5.7/lib/ruby/site_ruby/2.5.0/bundler/runtime.rb:108:in `block in definition_method'
-	from /Users/abubakar/.rvm/rubies/ruby-2.5.7/lib/ruby/site_ruby/2.5.0/bundler/runtime.rb:20:in `setup'
-	from /Users/abubakar/.rvm/rubies/ruby-2.5.7/lib/ruby/site_ruby/2.5.0/bundler.rb:107:in `setup'
-	from /Users/abubakar/.rvm/rubies/ruby-2.5.7/lib/ruby/site_ruby/2.5.0/bundler/setup.rb:20:in `<top (required)>'
-	from /Users/abubakar/.rvm/rubies/ruby-2.5.7/lib/ruby/site_ruby/2.5.0/rubygems/core_ext/kernel_require.rb:54:in `require'
-	from /Users/abubakar/.rvm/rubies/ruby-2.5.7/lib/ruby/site_ruby/2.5.0/rubygems/core_ext/kernel_require.rb:54:in `require'
-
-
-  Rendered welcome/index.html.erb within layouts/application (1043.1ms)
-Completed 200 OK in 1070ms (Views: 1067.2ms)
-
-
-Started GET "/welcome/index" for 127.0.0.1 at 2020-08-26 18:11:51 +0500
-Processing by WelcomeController#index as HTML
-  Rendering welcome/index.html.erb within layouts/application
-[Webpacker] Compiling…
-Started GET "/welcome/index" for 127.0.0.1 at 2020-08-26 18:11:54 +0500
-Processing by WelcomeController#index as HTML
-  Rendering welcome/index.html.erb within layouts/application
-  Rendered welcome/index.html.erb within layouts/application (1264.2ms)
-[Webpacker] Compiled all packs in /Users/abubakar/Desktop/react-rails-example-app/public/packs
-  Rendered welcome/index.html.erb within layouts/application (6437.5ms)
-Completed 200 OK in 5726ms (Views: 5721.7ms)
-
-
-Completed 200 OK in 10658ms (Views: 10035.3ms)
-
-
-Started GET "/" for 127.0.0.1 at 2020-08-26 18:12:40 +0500
-Processing by Rails::WelcomeController#index as HTML
-  Rendering /Users/abubakar/.rvm/gems/ruby-2.5.7/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
-  Rendered /Users/abubakar/.rvm/gems/ruby-2.5.7/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (1.8ms)
-Completed 200 OK in 10ms (Views: 4.8ms)
-
-
-Started GET "/welcome/index" for 127.0.0.1 at 2020-08-26 18:12:47 +0500
-Processing by WelcomeController#index as HTML
-  Rendering welcome/index.html.erb within layouts/application
-  Rendered welcome/index.html.erb within layouts/application (152.4ms)
-Completed 200 OK in 173ms (Views: 170.6ms)
+  Rendered welcome/index.html.erb within layouts/application (396.2ms)
+Completed 200 OK in 2387ms (Views: 2064.4ms)
 
 

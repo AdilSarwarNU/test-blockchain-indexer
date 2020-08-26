@@ -1,12 +1,7 @@
-import React from "react"
-import PropTypes from "prop-types"
-var Post = createReactClass({
-  propTypes: {
-    title: PropTypes.string,
-    body: PropTypes.string
-  },
-
-  render: function() {
+var React = require("react")
+var PropTypes = require("prop-types")
+class Post extends React.Component {
+  render () {
     return (
       <div>
         <div>Title: {this.props.title}</div>
@@ -14,5 +9,10 @@ var Post = createReactClass({
       </div>
     );
   }
-});
-export default Post
+}
+
+Post.propTypes = {
+  title: PropTypes.string,
+  body: PropTypes.string
+};
+module.exports = Post
