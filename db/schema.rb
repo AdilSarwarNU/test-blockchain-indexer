@@ -10,10 +10,33 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20200826191314) do
+ActiveRecord::Schema.define(version: 20200827051810) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "transactions", force: :cascade do |t|
+    t.integer "blockNumber"
+    t.string "timeStamp"
+    t.string "hash"
+    t.integer "nonce"
+    t.string "blockHash"
+    t.integer "transactionIndex"
+    t.string "gas"
+    t.string "gasPrice"
+    t.string "isError"
+    t.string "txreceipt_status"
+    t.string "input"
+    t.string "contractAddress"
+    t.string "cumulativeGasUsed"
+    t.string "gasUsed"
+    t.string "confirmations"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "value"
+    t.string "to"
+    t.string "from"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "name"

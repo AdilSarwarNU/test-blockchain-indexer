@@ -767,3 +767,748 @@ Processing by Api::V1::UsersController#show as JSON
 Completed 200 OK in 13ms (Views: 0.4ms | ActiveRecord: 0.5ms)
 
 
+Started GET "/welcome/index" for ::1 at 2020-08-27 02:50:32 +0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/abubakar/Documents/test-blockchain-indexer/public/packs
+  Rendered welcome/index.html.erb within layouts/application (4139.9ms)
+Completed 500 Internal Server Error in 4148ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <%= javascript_pack_tag 'application' %>
+    2: <%= react_component 'User', { name: @user.name, email: @user.email }, prerender: true %>
+  
+app/views/welcome/index.html.erb:2:in `_app_views_welcome_index_html_erb___2336236667662618170_70358865505520'
+Started GET "/welcome/index" for ::1 at 2020-08-27 02:51:23 +0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/abubakar/Documents/test-blockchain-indexer/public/packs
+  Rendered welcome/index.html.erb within layouts/application (2739.0ms)
+Completed 500 Internal Server Error in 2748ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Encountered error "#<ExecJS::ProgramError: Invariant Violation: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.>" when prerendering Post with {"title":"A working react component","body":"Simple but effective"}
+invariant ((execjs):25165:15)
+ReactDOMServerRenderer.render ((execjs):28554:7)
+ReactDOMServerRenderer.read ((execjs):28272:29)
+Object.renderToString ((execjs):28757:27)
+Object.serverRender ((execjs):496:42)
+eval (eval at <anonymous> ((execjs):29090:8), <anonymous>:6:45)
+eval (eval at <anonymous> ((execjs):29090:8), <anonymous>:18:13)
+(execjs):29090:8
+(execjs):29096:14
+(execjs):1:40
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/execjs-2.7.0/lib/execjs/external_runtime.rb:39:in `exec'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/execjs-2.7.0/lib/execjs/external_runtime.rb:21:in `eval'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/react-rails-2.5.0/lib/react/server_rendering/exec_js_renderer.rb:39:in `render_from_parts'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/react-rails-2.5.0/lib/react/server_rendering/exec_js_renderer.rb:20:in `render'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/react-rails-2.5.0/lib/react/server_rendering/bundle_renderer.rb:40:in `render'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/react-rails-2.5.0/lib/react/server_rendering.rb:27:in `block in render'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/connection_pool-2.2.2/lib/connection_pool.rb:65:in `block (2 levels) in with'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/connection_pool-2.2.2/lib/connection_pool.rb:64:in `handle_interrupt'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/connection_pool-2.2.2/lib/connection_pool.rb:64:in `block in with'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/connection_pool-2.2.2/lib/connection_pool.rb:61:in `handle_interrupt'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/connection_pool-2.2.2/lib/connection_pool.rb:61:in `with'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/react-rails-2.5.0/lib/react/server_rendering.rb:26:in `render'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/react-rails-2.5.0/lib/react/rails/component_mount.rb:67:in `prerender_component'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/react-rails-2.5.0/lib/react/rails/component_mount.rb:34:in `block in react_component'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionview-5.1.6/lib/action_view/helpers/capture_helper.rb:39:in `block in capture'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionview-5.1.6/lib/action_view/helpers/capture_helper.rb:203:in `with_output_buffer'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionview-5.1.6/lib/action_view/helpers/capture_helper.rb:39:in `capture'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionview-5.1.6/lib/action_view/helpers/tag_helper.rb:272:in `content_tag'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/react-rails-2.5.0/lib/react/rails/component_mount.rb:50:in `react_component'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/react-rails-2.5.0/lib/react/rails/view_helper.rb:21:in `react_component'
+/Users/abubakar/Documents/test-blockchain-indexer/app/views/welcome/index.html.erb:2:in `_app_views_welcome_index_html_erb___2336236667662618170_70358907668860'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionview-5.1.6/lib/action_view/template.rb:157:in `block in render'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/activesupport-5.1.6/lib/active_support/notifications.rb:168:in `instrument'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionview-5.1.6/lib/action_view/template.rb:352:in `instrument_render_template'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionview-5.1.6/lib/action_view/template.rb:155:in `render'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionview-5.1.6/lib/action_view/renderer/template_renderer.rb:52:in `block (2 levels) in render_template'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionview-5.1.6/lib/action_view/renderer/abstract_renderer.rb:42:in `block in instrument'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/activesupport-5.1.6/lib/active_support/notifications.rb:166:in `block in instrument'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/activesupport-5.1.6/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/activesupport-5.1.6/lib/active_support/notifications.rb:166:in `instrument'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionview-5.1.6/lib/action_view/renderer/abstract_renderer.rb:41:in `instrument'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionview-5.1.6/lib/action_view/renderer/template_renderer.rb:51:in `block in render_template'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionview-5.1.6/lib/action_view/renderer/template_renderer.rb:59:in `render_with_layout'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionview-5.1.6/lib/action_view/renderer/template_renderer.rb:50:in `render_template'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionview-5.1.6/lib/action_view/renderer/template_renderer.rb:14:in `render'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionview-5.1.6/lib/action_view/renderer/renderer.rb:42:in `render_template'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionview-5.1.6/lib/action_view/renderer/renderer.rb:23:in `render'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionview-5.1.6/lib/action_view/rendering.rb:103:in `_render_template'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionpack-5.1.6/lib/action_controller/metal/streaming.rb:217:in `_render_template'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionview-5.1.6/lib/action_view/rendering.rb:83:in `render_to_body'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionpack-5.1.6/lib/action_controller/metal/rendering.rb:52:in `render_to_body'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionpack-5.1.6/lib/action_controller/metal/renderers.rb:141:in `render_to_body'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionpack-5.1.6/lib/abstract_controller/rendering.rb:24:in `render'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionpack-5.1.6/lib/action_controller/metal/rendering.rb:36:in `render'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionpack-5.1.6/lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/activesupport-5.1.6/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+/Users/abubakar/.rvm/rubies/ruby-2.5.7/lib/ruby/2.5.0/benchmark.rb:308:in `realtime'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/activesupport-5.1.6/lib/active_support/core_ext/benchmark.rb:12:in `ms'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionpack-5.1.6/lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionpack-5.1.6/lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/activerecord-5.1.6/lib/active_record/railties/controller_runtime.rb:29:in `cleanup_view_runtime'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionpack-5.1.6/lib/action_controller/metal/instrumentation.rb:43:in `render'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionpack-5.1.6/lib/action_controller/metal/implicit_render.rb:33:in `default_render'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionpack-5.1.6/lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionpack-5.1.6/lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionpack-5.1.6/lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionpack-5.1.6/lib/abstract_controller/base.rb:186:in `process_action'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionpack-5.1.6/lib/action_controller/metal/rendering.rb:30:in `process_action'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionpack-5.1.6/lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/activesupport-5.1.6/lib/active_support/callbacks.rb:108:in `block in run_callbacks'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/react-rails-2.5.0/lib/react/rails/controller_lifecycle.rb:31:in `use_react_component_helper'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/activesupport-5.1.6/lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/activesupport-5.1.6/lib/active_support/callbacks.rb:135:in `run_callbacks'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionpack-5.1.6/lib/abstract_controller/callbacks.rb:19:in `process_action'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionpack-5.1.6/lib/action_controller/metal/rescue.rb:20:in `process_action'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionpack-5.1.6/lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/activesupport-5.1.6/lib/active_support/notifications.rb:166:in `block in instrument'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/activesupport-5.1.6/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/activesupport-5.1.6/lib/active_support/notifications.rb:166:in `instrument'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionpack-5.1.6/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionpack-5.1.6/lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/activerecord-5.1.6/lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionpack-5.1.6/lib/abstract_controller/base.rb:124:in `process'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionview-5.1.6/lib/action_view/rendering.rb:30:in `process'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionpack-5.1.6/lib/action_controller/metal.rb:189:in `dispatch'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionpack-5.1.6/lib/action_controller/metal.rb:253:in `dispatch'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionpack-5.1.6/lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionpack-5.1.6/lib/action_dispatch/routing/route_set.rb:31:in `serve'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionpack-5.1.6/lib/action_dispatch/journey/router.rb:50:in `block in serve'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionpack-5.1.6/lib/action_dispatch/journey/router.rb:33:in `each'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionpack-5.1.6/lib/action_dispatch/journey/router.rb:33:in `serve'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionpack-5.1.6/lib/action_dispatch/routing/route_set.rb:844:in `call'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/rack-2.2.3/lib/rack/etag.rb:27:in `call'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/rack-2.2.3/lib/rack/conditional_get.rb:27:in `call'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/rack-2.2.3/lib/rack/head.rb:12:in `call'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/rack-2.2.3/lib/rack/session/abstract/id.rb:266:in `context'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/rack-2.2.3/lib/rack/session/abstract/id.rb:260:in `call'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionpack-5.1.6/lib/action_dispatch/middleware/cookies.rb:613:in `call'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/activerecord-5.1.6/lib/active_record/migration.rb:556:in `call'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionpack-5.1.6/lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/activesupport-5.1.6/lib/active_support/callbacks.rb:97:in `run_callbacks'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionpack-5.1.6/lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionpack-5.1.6/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionpack-5.1.6/lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/web-console-3.7.0/lib/web_console/middleware.rb:135:in `call_app'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/web-console-3.7.0/lib/web_console/middleware.rb:30:in `block in call'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `catch'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `call'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionpack-5.1.6/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/railties-5.1.6/lib/rails/rack/logger.rb:36:in `call_app'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/railties-5.1.6/lib/rails/rack/logger.rb:24:in `block in call'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/activesupport-5.1.6/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/activesupport-5.1.6/lib/active_support/tagged_logging.rb:26:in `tagged'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/activesupport-5.1.6/lib/active_support/tagged_logging.rb:69:in `tagged'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/railties-5.1.6/lib/rails/rack/logger.rb:24:in `call'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionpack-5.1.6/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionpack-5.1.6/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/activesupport-5.1.6/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionpack-5.1.6/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/actionpack-5.1.6/lib/action_dispatch/middleware/static.rb:125:in `call'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/webpacker-3.5.5/lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/rack-proxy-0.6.5/lib/rack/proxy.rb:57:in `call'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/railties-5.1.6/lib/rails/engine.rb:522:in `call'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+/Users/abubakar/.rvm/gems/ruby-2.5.7/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'):
+    1: <%= javascript_pack_tag 'application' %>
+    2: <%= react_component 'Post', { title: 'A working react component', body: 'Simple but effective' }, prerender: true %>
+  
+app/views/welcome/index.html.erb:2:in `_app_views_welcome_index_html_erb___2336236667662618170_70358907668860'
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1208053861178792985)[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateTransactions (20200827032825)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (44.7ms)[0m  [1m[35mCREATE TABLE "transactions" ("id" bigserial primary key, "block_number" integer, "hash" character varying, "nonce" integer, "block_hash" character varying, "transaction_index" integer, "from_id" character varying, "to_id" character varying, "value" integer, "gas" character varying, "gas_price" character varying, "is_error" character varying, "txreceipt_status" character varying, "input" character varying, "contract_address" character varying, "cumulative_gas_used" character varying, "gas_used" character varying, "confirmations" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200827032825"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1208053861178792985)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/api/v1/transactions" for ::1 at 2020-08-27 08:46:06 +0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::TransactionsController#create as JSON
+  Parameters: {"blockNumber"=>"598778", "timeStamp"=>"1490027136", "hash"=>"0x38d62aea47c413457b7d7318d602d1c10cc6bacb35bbb098ea9bc53fc080d1b8", "nonce"=>"0", "blockHash"=>"0x83223bd818d6ab04c27a2b86baf4d8cfc255877b6a029beced1b05d86755f89b", "transactionIndex"=>"769", "from"=>"0xb13d56676c535811ac5532e12f16da9010f719f4", "to"=>"0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a", "value"=>"42", "gas"=>"100000", "gasPrice"=>"20000000000", "isError"=>"0", "txreceipt_status"=>"", "input"=>"0x", "contractAddress"=>"", "cumulativeGasUsed"=>"64764597", "gasUsed"=>"21000", "confirmations"=>"7972966", "transaction"=>{"hash"=>"0x38d62aea47c413457b7d7318d602d1c10cc6bacb35bbb098ea9bc53fc080d1b8", "nonce"=>"0", "value"=>"42", "gas"=>"100000", "txreceipt_status"=>"", "input"=>"0x", "confirmations"=>"7972966"}}
+Unpermitted parameters: :timeStamp, :format, :transaction
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 7.7ms)
+
+
+  
+ActiveRecord::DangerousAttributeError (hash is defined by Active Record. Check to make sure that you don't have an attribute or method with the same name.):
+  
+app/controllers/api/v1/transactions_controller.rb:5:in `create'
+Started POST "/api/v1/transactions" for ::1 at 2020-08-27 08:47:13 +0500
+Processing by Api::V1::TransactionsController#create as JSON
+  Parameters: {"blockNumber"=>"598778", "timeStamp"=>"1490027136", "nonce"=>"0", "blockHash"=>"0x83223bd818d6ab04c27a2b86baf4d8cfc255877b6a029beced1b05d86755f89b", "transactionIndex"=>"769", "from"=>"0xb13d56676c535811ac5532e12f16da9010f719f4", "to"=>"0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a", "value"=>"42", "gas"=>"100000", "gasPrice"=>"20000000000", "isError"=>"0", "txreceipt_status"=>"", "input"=>"0x", "contractAddress"=>"", "cumulativeGasUsed"=>"64764597", "gasUsed"=>"21000", "confirmations"=>"7972966", "transaction"=>{"nonce"=>"0", "value"=>"42", "gas"=>"100000", "txreceipt_status"=>"", "input"=>"0x", "confirmations"=>"7972966"}}
+Unpermitted parameters: :timeStamp, :format, :transaction
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::DangerousAttributeError (hash is defined by Active Record. Check to make sure that you don't have an attribute or method with the same name.):
+  
+app/controllers/api/v1/transactions_controller.rb:5:in `create'
+Started POST "/api/v1/transactions" for ::1 at 2020-08-27 08:47:44 +0500
+Processing by Api::V1::TransactionsController#create as JSON
+  Parameters: {"blockNumber"=>"598778", "nonce"=>"0", "blockHash"=>"0x83223bd818d6ab04c27a2b86baf4d8cfc255877b6a029beced1b05d86755f89b", "transactionIndex"=>"769", "from"=>"0xb13d56676c535811ac5532e12f16da9010f719f4", "to"=>"0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a", "value"=>"42", "gas"=>"100000", "gasPrice"=>"20000000000", "isError"=>"0", "txreceipt_status"=>"", "input"=>"0x", "contractAddress"=>"", "cumulativeGasUsed"=>"64764597", "gasUsed"=>"21000", "confirmations"=>"7972966", "transaction"=>{"nonce"=>"0", "value"=>"42", "gas"=>"100000", "txreceipt_status"=>"", "input"=>"0x", "confirmations"=>"7972966"}}
+Unpermitted parameters: :format, :transaction
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::DangerousAttributeError (hash is defined by Active Record. Check to make sure that you don't have an attribute or method with the same name.):
+  
+app/controllers/api/v1/transactions_controller.rb:5:in `create'
+Started POST "/api/v1/transactions" for ::1 at 2020-08-27 08:48:59 +0500
+Processing by Api::V1::TransactionsController#create as JSON
+  Parameters: {"blockNumber"=>"598778", "nonce"=>"0", "transactionIndex"=>"769", "from"=>"0xb13d56676c535811ac5532e12f16da9010f719f4", "to"=>"0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a", "value"=>"42", "gas"=>"100000", "gasPrice"=>"20000000000", "isError"=>"0", "txreceipt_status"=>"", "input"=>"0x", "contractAddress"=>"", "cumulativeGasUsed"=>"64764597", "gasUsed"=>"21000", "confirmations"=>"7972966", "transaction"=>{"nonce"=>"0", "value"=>"42", "gas"=>"100000", "txreceipt_status"=>"", "input"=>"0x", "confirmations"=>"7972966"}}
+Unpermitted parameters: :format, :transaction
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::DangerousAttributeError (hash is defined by Active Record. Check to make sure that you don't have an attribute or method with the same name.):
+  
+app/controllers/api/v1/transactions_controller.rb:5:in `create'
+Started POST "/api/v1/transactions" for ::1 at 2020-08-27 08:49:07 +0500
+Processing by Api::V1::TransactionsController#create as JSON
+  Parameters: {"blockNumber"=>"598778", "nonce"=>"0", "transactionIndex"=>"769", "from"=>"0xb13d56676c535811ac5532e12f16da9010f719f4", "to"=>"0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a", "value"=>"42", "gas"=>"100000", "gasPrice"=>"20000000000", "isError"=>"0", "txreceipt_status"=>"", "input"=>"0x", "contractAddress"=>"", "cumulativeGasUsed"=>"64764597", "gasUsed"=>"21000", "confirmations"=>"7972966", "transaction"=>{"nonce"=>"0", "value"=>"42", "gas"=>"100000", "txreceipt_status"=>"", "input"=>"0x", "confirmations"=>"7972966"}}
+Unpermitted parameters: :format, :transaction
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::DangerousAttributeError (hash is defined by Active Record. Check to make sure that you don't have an attribute or method with the same name.):
+  
+app/controllers/api/v1/transactions_controller.rb:5:in `create'
+Started POST "/api/v1/transactions" for ::1 at 2020-08-27 08:51:36 +0500
+Processing by Api::V1::TransactionsController#create as JSON
+  Parameters: {"blockNumber"=>"598778", "nonce"=>"0", "transactionIndex"=>"769", "from"=>"0xb13d56676c535811ac5532e12f16da9010f719f4", "to"=>"0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a", "value"=>"42", "gas"=>"100000", "gasPrice"=>"20000000000", "isError"=>"0", "txreceipt_status"=>"", "input"=>"0x", "contractAddress"=>"", "cumulativeGasUsed"=>"64764597", "gasUsed"=>"21000", "confirmations"=>"7972966", "transaction"=>{"nonce"=>"0", "value"=>"42", "gas"=>"100000", "txreceipt_status"=>"", "input"=>"0x", "confirmations"=>"7972966"}}
+Unpermitted parameters: :format, :transaction
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::DangerousAttributeError (hash is defined by Active Record. Check to make sure that you don't have an attribute or method with the same name.):
+  
+app/controllers/api/v1/transactions_controller.rb:5:in `create'
+Started POST "/api/v1/transactions" for ::1 at 2020-08-27 08:51:38 +0500
+Processing by Api::V1::TransactionsController#create as JSON
+  Parameters: {"blockNumber"=>"598778", "nonce"=>"0", "transactionIndex"=>"769", "from"=>"0xb13d56676c535811ac5532e12f16da9010f719f4", "to"=>"0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a", "value"=>"42", "gas"=>"100000", "gasPrice"=>"20000000000", "isError"=>"0", "txreceipt_status"=>"", "input"=>"0x", "contractAddress"=>"", "cumulativeGasUsed"=>"64764597", "gasUsed"=>"21000", "confirmations"=>"7972966", "transaction"=>{"nonce"=>"0", "value"=>"42", "gas"=>"100000", "txreceipt_status"=>"", "input"=>"0x", "confirmations"=>"7972966"}}
+Unpermitted parameters: :format, :transaction
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::DangerousAttributeError (hash is defined by Active Record. Check to make sure that you don't have an attribute or method with the same name.):
+  
+app/controllers/api/v1/transactions_controller.rb:5:in `create'
+Started POST "/api/v1/transactions" for ::1 at 2020-08-27 08:51:54 +0500
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::TransactionsController#create as JSON
+  Parameters: {"blockNumber"=>"598778", "nonce"=>"0", "transactionIndex"=>"769", "from"=>"0xb13d56676c535811ac5532e12f16da9010f719f4", "to"=>"0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a", "value"=>"42", "gas"=>"100000", "gasPrice"=>"20000000000", "isError"=>"0", "txreceipt_status"=>"", "input"=>"0x", "contractAddress"=>"", "cumulativeGasUsed"=>"64764597", "gasUsed"=>"21000", "confirmations"=>"7972966", "transaction"=>{"nonce"=>"0", "value"=>"42", "gas"=>"100000", "txreceipt_status"=>"", "input"=>"0x", "confirmations"=>"7972966"}}
+Unpermitted parameters: :format, :transaction
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 7.1ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'blockNumber' for Transaction.):
+  
+app/controllers/api/v1/transactions_controller.rb:5:in `create'
+Started POST "/api/v1/transactions" for ::1 at 2020-08-27 08:53:00 +0500
+Processing by Api::V1::TransactionsController#create as JSON
+  Parameters: {"blockNumber"=>"598778", "nonce"=>"0", "transactionIndex"=>"769", "from"=>"0xb13d56676c535811ac5532e12f16da9010f719f4", "to"=>"0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a", "value"=>"42", "gas"=>"100000", "gasPrice"=>"20000000000", "isError"=>"0", "txreceipt_status"=>"", "input"=>"0x", "contractAddress"=>"", "cumulativeGasUsed"=>"64764597", "gasUsed"=>"21000", "confirmations"=>"7972966", "transaction"=>{"nonce"=>"0", "value"=>"42", "gas"=>"100000", "txreceipt_status"=>"", "input"=>"0x", "confirmations"=>"7972966"}}
+Unpermitted parameters: :blockNumber, :gasPrice, :isError, :contractAddress, :cumulativeGasUsed, :gasUsed, :format, :transaction
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'transactionIndex' for Transaction.):
+  
+app/controllers/api/v1/transactions_controller.rb:5:in `create'
+Started POST "/api/v1/transactions" for ::1 at 2020-08-27 08:53:28 +0500
+Processing by Api::V1::TransactionsController#create as JSON
+  Parameters: {"blockNumber"=>"598778", "nonce"=>"0", "transactionIndex"=>"769", "from"=>"0xb13d56676c535811ac5532e12f16da9010f719f4", "to"=>"0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a", "value"=>"42", "gas"=>"100000", "gasPrice"=>"20000000000", "isError"=>"0", "txreceipt_status"=>"", "input"=>"0x", "contractAddress"=>"", "cumulativeGasUsed"=>"64764597", "gasUsed"=>"21000", "confirmations"=>"7972966", "transaction"=>{"nonce"=>"0", "value"=>"42", "gas"=>"100000", "txreceipt_status"=>"", "input"=>"0x", "confirmations"=>"7972966"}}
+Unpermitted parameters: :blockNumber, :transactionIndex, :gasPrice, :isError, :contractAddress, :cumulativeGasUsed, :gasUsed, :format, :transaction
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::AssociationTypeMismatch (User(#70149598712180) expected, got "0xb13d56676c535811ac5532e12f16da9010f719f4" which is an instance of String(#70149596380700)):
+  
+app/controllers/api/v1/transactions_controller.rb:5:in `create'
+Started POST "/api/v1/transactions" for ::1 at 2020-08-27 08:58:23 +0500
+Processing by Api::V1::TransactionsController#create as JSON
+  Parameters: {"blockNumber"=>"598778", "nonce"=>"0", "transactionIndex"=>"769", "from"=>"#70149598712180", "to"=>"#70149598712182", "value"=>"42", "gas"=>"100000", "gasPrice"=>"20000000000", "isError"=>"0", "txreceipt_status"=>"", "input"=>"0x", "contractAddress"=>"", "cumulativeGasUsed"=>"64764597", "gasUsed"=>"21000", "confirmations"=>"7972966", "transaction"=>{"nonce"=>"0", "value"=>"42", "gas"=>"100000", "txreceipt_status"=>"", "input"=>"0x", "confirmations"=>"7972966"}}
+Unpermitted parameters: :blockNumber, :transactionIndex, :gasPrice, :isError, :contractAddress, :cumulativeGasUsed, :gasUsed, :format, :transaction
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::AssociationTypeMismatch (User(#70149598712180) expected, got "#70149598712180" which is an instance of String(#70149596380700)):
+  
+app/controllers/api/v1/transactions_controller.rb:5:in `create'
+Started POST "/api/v1/transactions" for ::1 at 2020-08-27 08:59:40 +0500
+Processing by Api::V1::TransactionsController#create as JSON
+  Parameters: {"blockNumber"=>"598778", "nonce"=>"0", "transactionIndex"=>"769", "from"=>"0xb13d56676c535811ac5532e12f16da9010f719f4", "to"=>"0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a", "value"=>"42", "gas"=>"100000", "gasPrice"=>"20000000000", "isError"=>"0", "txreceipt_status"=>"", "input"=>"0x", "contractAddress"=>"", "cumulativeGasUsed"=>"64764597", "gasUsed"=>"21000", "confirmations"=>"7972966", "transaction"=>{"nonce"=>"0", "value"=>"42", "gas"=>"100000", "txreceipt_status"=>"", "input"=>"0x", "confirmations"=>"7972966"}}
+Unpermitted parameters: :blockNumber, :transactionIndex, :gasPrice, :isError, :contractAddress, :cumulativeGasUsed, :gasUsed, :format, :transaction
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::AssociationTypeMismatch (User(#70149598712180) expected, got "0xb13d56676c535811ac5532e12f16da9010f719f4" which is an instance of String(#70149596380700)):
+  
+app/controllers/api/v1/transactions_controller.rb:5:in `create'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1208053861178792985)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to ChangeColumnDataType (20200827040336)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (32.5ms)[0m  [1m[35mALTER TABLE "transactions" ALTER COLUMN "to_id" TYPE bigint[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(1208053861178792985)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1208053861178792985)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to RemoveToIdFromTransaction (20200827040721)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.5ms)[0m  [1m[35mALTER TABLE "transactions" DROP "to_id"[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200827040721"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to RemoveFromIdFromTransaction (20200827040741)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "transactions" DROP "from_id"[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200827040741"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(1208053861178792985)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1208053861178792985)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddColumnsToTransactions (20200827040913)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.3ms)[0m  [1m[35mALTER TABLE "transactions" ADD "from_id" bigint[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "transactions" ADD "to_id" bigint[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200827040913"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (2.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(1208053861178792985)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/api/v1/transactions" for ::1 at 2020-08-27 09:09:54 +0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::TransactionsController#create as JSON
+  Parameters: {"blockNumber"=>"598778", "nonce"=>"0", "transactionIndex"=>"769", "from"=>"0xb13d56676c535811ac5532e12f16da9010f719f4", "to"=>"0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a", "value"=>"42", "gas"=>"100000", "gasPrice"=>"20000000000", "isError"=>"0", "txreceipt_status"=>"", "input"=>"0x", "contractAddress"=>"", "cumulativeGasUsed"=>"64764597", "gasUsed"=>"21000", "confirmations"=>"7972966", "transaction"=>{"nonce"=>"0", "value"=>"42", "gas"=>"100000", "txreceipt_status"=>"", "input"=>"0x", "confirmations"=>"7972966"}}
+Unpermitted parameters: :blockNumber, :transactionIndex, :gasPrice, :isError, :contractAddress, :cumulativeGasUsed, :gasUsed, :format, :transaction
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::AssociationTypeMismatch (User(#70149601805080) expected, got "0xb13d56676c535811ac5532e12f16da9010f719f4" which is an instance of String(#70149596380700)):
+  
+app/controllers/api/v1/transactions_controller.rb:5:in `create'
+Started POST "/api/v1/transactions" for ::1 at 2020-08-27 09:10:32 +0500
+Processing by Api::V1::TransactionsController#create as JSON
+  Parameters: {"blockNumber"=>"598778", "nonce"=>"0", "transactionIndex"=>"769", "from"=>"1", "to"=>"2", "value"=>"42", "gas"=>"100000", "gasPrice"=>"20000000000", "isError"=>"0", "txreceipt_status"=>"", "input"=>"0x", "contractAddress"=>"", "cumulativeGasUsed"=>"64764597", "gasUsed"=>"21000", "confirmations"=>"7972966", "transaction"=>{"nonce"=>"0", "value"=>"42", "gas"=>"100000", "txreceipt_status"=>"", "input"=>"0x", "confirmations"=>"7972966"}}
+Unpermitted parameters: :blockNumber, :transactionIndex, :gasPrice, :isError, :contractAddress, :cumulativeGasUsed, :gasUsed, :format, :transaction
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::AssociationTypeMismatch (User(#70149601805080) expected, got "1" which is an instance of String(#70149596380700)):
+  
+app/controllers/api/v1/transactions_controller.rb:5:in `create'
+Started POST "/api/v1/transactions" for ::1 at 2020-08-27 09:10:56 +0500
+Processing by Api::V1::TransactionsController#create as JSON
+  Parameters: {"blockNumber"=>"598778", "nonce"=>"0", "transactionIndex"=>"769", "from"=>1, "to"=>2, "value"=>"42", "gas"=>"100000", "gasPrice"=>"20000000000", "isError"=>"0", "txreceipt_status"=>"", "input"=>"0x", "contractAddress"=>"", "cumulativeGasUsed"=>"64764597", "gasUsed"=>"21000", "confirmations"=>"7972966", "transaction"=>{"nonce"=>"0", "value"=>"42", "gas"=>"100000", "txreceipt_status"=>"", "input"=>"0x", "confirmations"=>"7972966"}}
+Unpermitted parameters: :blockNumber, :transactionIndex, :gasPrice, :isError, :contractAddress, :cumulativeGasUsed, :gasUsed, :format, :transaction
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::AssociationTypeMismatch (User(#70149601805080) expected, got 1 which is an instance of Integer(#70149596347560)):
+  
+app/controllers/api/v1/transactions_controller.rb:5:in `create'
+Started POST "/api/v1/transactions" for ::1 at 2020-08-27 09:12:16 +0500
+Processing by Api::V1::TransactionsController#create as JSON
+  Parameters: {"blockNumber"=>"598778", "nonce"=>"0", "transactionIndex"=>"769", "from"=>1, "to"=>2, "value"=>"42", "gas"=>"100000", "gasPrice"=>"20000000000", "isError"=>"0", "txreceipt_status"=>"", "input"=>"0x", "contractAddress"=>"", "cumulativeGasUsed"=>"64764597", "gasUsed"=>"21000", "confirmations"=>"7972966", "transaction"=>{"nonce"=>"0", "value"=>"42", "gas"=>"100000", "txreceipt_status"=>"", "input"=>"0x", "confirmations"=>"7972966"}}
+Unpermitted parameters: :blockNumber, :transactionIndex, :gasPrice, :isError, :contractAddress, :cumulativeGasUsed, :gasUsed, :format, :transaction
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `primary_key' for Integer:Class):
+  
+app/controllers/api/v1/transactions_controller.rb:5:in `create'
+Started POST "/api/v1/transactions" for ::1 at 2020-08-27 09:12:39 +0500
+Processing by Api::V1::TransactionsController#create as JSON
+  Parameters: {"blockNumber"=>"598778", "nonce"=>"0", "transactionIndex"=>"769", "from"=>1, "to"=>2, "value"=>"42", "gas"=>"100000", "gasPrice"=>"20000000000", "isError"=>"0", "txreceipt_status"=>"", "input"=>"0x", "contractAddress"=>"", "cumulativeGasUsed"=>"64764597", "gasUsed"=>"21000", "confirmations"=>"7972966", "transaction"=>{"nonce"=>"0", "value"=>"42", "gas"=>"100000", "txreceipt_status"=>"", "input"=>"0x", "confirmations"=>"7972966"}}
+Unpermitted parameters: :blockNumber, :transactionIndex, :gasPrice, :isError, :contractAddress, :cumulativeGasUsed, :gasUsed, :format, :transaction
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `primary_key' for Integer:Class):
+  
+app/controllers/api/v1/transactions_controller.rb:5:in `create'
+Started POST "/api/v1/transactions" for ::1 at 2020-08-27 09:13:23 +0500
+Processing by Api::V1::TransactionsController#create as JSON
+  Parameters: {"blockNumber"=>"598778", "nonce"=>"0", "transactionIndex"=>"769", "from"=>1, "to"=>2, "value"=>"42", "gas"=>"100000", "gasPrice"=>"20000000000", "isError"=>"0", "txreceipt_status"=>"", "input"=>"0x", "contractAddress"=>"", "cumulativeGasUsed"=>"64764597", "gasUsed"=>"21000", "confirmations"=>"7972966", "transaction"=>{"nonce"=>"0", "value"=>"42", "gas"=>"100000", "txreceipt_status"=>"", "input"=>"0x", "confirmations"=>"7972966"}}
+Unpermitted parameters: :blockNumber, :transactionIndex, :gasPrice, :isError, :contractAddress, :cumulativeGasUsed, :gasUsed, :format, :transaction
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::AssociationTypeMismatch (User(#70149624156480) expected, got 1 which is an instance of Integer(#70149596347560)):
+  
+app/controllers/api/v1/transactions_controller.rb:5:in `create'
+Started POST "/api/v1/transactions" for ::1 at 2020-08-27 09:17:17 +0500
+Processing by Api::V1::TransactionsController#create as JSON
+  Parameters: {"blockNumber"=>"598778", "nonce"=>"0", "transactionIndex"=>"769", "from"=>1, "to"=>2, "value"=>"42", "gas"=>"100000", "gasPrice"=>"20000000000", "isError"=>"0", "txreceipt_status"=>"", "input"=>"0x", "contractAddress"=>"", "cumulativeGasUsed"=>"64764597", "gasUsed"=>"21000", "confirmations"=>"7972966", "transaction"=>{"nonce"=>"0", "value"=>"42", "gas"=>"100000", "txreceipt_status"=>"", "input"=>"0x", "confirmations"=>"7972966"}}
+Unpermitted parameters: :blockNumber, :transactionIndex, :gasPrice, :isError, :contractAddress, :cumulativeGasUsed, :gasUsed, :format, :transaction
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'from' for Transaction.):
+  
+app/controllers/api/v1/transactions_controller.rb:5:in `create'
+Started POST "/api/v1/transactions" for ::1 at 2020-08-27 09:18:18 +0500
+Processing by Api::V1::TransactionsController#create as JSON
+  Parameters: {"blockNumber"=>"598778", "nonce"=>"0", "transactionIndex"=>"769", "from_id"=>1, "to_id"=>2, "value"=>"42", "gas"=>"100000", "gasPrice"=>"20000000000", "isError"=>"0", "txreceipt_status"=>"", "input"=>"0x", "contractAddress"=>"", "cumulativeGasUsed"=>"64764597", "gasUsed"=>"21000", "confirmations"=>"7972966", "transaction"=>{"nonce"=>"0", "from_id"=>1, "to_id"=>2, "value"=>"42", "gas"=>"100000", "txreceipt_status"=>"", "input"=>"0x", "confirmations"=>"7972966"}}
+Unpermitted parameters: :blockNumber, :transactionIndex, :gasPrice, :isError, :contractAddress, :cumulativeGasUsed, :gasUsed, :format, :transaction
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTransaction Exists (2.4ms)[0m  [1m[34mSELECT  1 AS one FROM "transactions" WHERE "transactions"."from_id" = $1 AND "transactions"."to_id" = $2 LIMIT $3[0m  [["from_id", "1"], ["to_id", "2"], ["LIMIT", 1]]
+  [1m[35mSQL (7.5ms)[0m  [1m[32mINSERT INTO "transactions" ("nonce", "from_id", "to_id", "value", "gas", "txreceipt_status", "input", "confirmations", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["nonce", 0], ["from_id", "1"], ["to_id", "2"], ["value", 42], ["gas", "100000"], ["txreceipt_status", ""], ["input", "0x"], ["confirmations", "7972966"], ["created_at", "2020-08-27 04:18:18.521976"], ["updated_at", "2020-08-27 04:18:18.521976"]]
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+No template found for Api::V1::TransactionsController#create, rendering head :no_content
+Completed 204 No Content in 215ms (ActiveRecord: 23.4ms)
+
+
+Started POST "/api/v1/transactions" for ::1 at 2020-08-27 09:20:12 +0500
+Processing by Api::V1::TransactionsController#create as JSON
+  Parameters: {"blockNumber"=>"598778", "nonce"=>"0", "transactionIndex"=>"769", "from_id"=>1, "to_id"=>2, "value"=>"42", "gas"=>"100000", "gasPrice"=>"20000000000", "isError"=>"0", "txreceipt_status"=>"", "input"=>"0x", "contractAddress"=>"", "cumulativeGasUsed"=>"64764597", "gasUsed"=>"21000", "confirmations"=>"7972966", "transaction"=>{"nonce"=>"0", "from_id"=>1, "to_id"=>2, "value"=>"42", "gas"=>"100000", "txreceipt_status"=>"", "input"=>"0x", "confirmations"=>"7972966"}}
+Unpermitted parameters: :blockNumber, :transactionIndex, :gasPrice, :isError, :contractAddress, :cumulativeGasUsed, :gasUsed, :format, :transaction
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTransaction Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "transactions" WHERE "transactions"."from_id" = $1 AND "transactions"."to_id" = $2 LIMIT $3[0m  [["from_id", "1"], ["to_id", "2"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 39ms (Views: 0.5ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/api/v1/transactions" for ::1 at 2020-08-27 09:20:35 +0500
+Processing by Api::V1::TransactionsController#create as JSON
+  Parameters: {"blockNumber"=>"598778", "nonce"=>"0", "transactionIndex"=>"769", "from_id"=>2, "to_id"=>2, "value"=>"42", "gas"=>"100000", "gasPrice"=>"20000000000", "isError"=>"0", "txreceipt_status"=>"", "input"=>"0x", "contractAddress"=>"", "cumulativeGasUsed"=>"64764597", "gasUsed"=>"21000", "confirmations"=>"7972966", "transaction"=>{"nonce"=>"0", "from_id"=>2, "to_id"=>2, "value"=>"42", "gas"=>"100000", "txreceipt_status"=>"", "input"=>"0x", "confirmations"=>"7972966"}}
+Unpermitted parameters: :blockNumber, :transactionIndex, :gasPrice, :isError, :contractAddress, :cumulativeGasUsed, :gasUsed, :format, :transaction
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTransaction Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "transactions" WHERE "transactions"."from_id" = $1 AND "transactions"."to_id" = $2 LIMIT $3[0m  [["from_id", "2"], ["to_id", "2"], ["LIMIT", 1]]
+  [1m[35mSQL (3.2ms)[0m  [1m[32mINSERT INTO "transactions" ("nonce", "from_id", "to_id", "value", "gas", "txreceipt_status", "input", "confirmations", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["nonce", 0], ["from_id", "2"], ["to_id", "2"], ["value", 42], ["gas", "100000"], ["txreceipt_status", ""], ["input", "0x"], ["confirmations", "7972966"], ["created_at", "2020-08-27 04:20:35.453062"], ["updated_at", "2020-08-27 04:20:35.453062"]]
+  [1m[35m (6.7ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 20ms (Views: 0.1ms | ActiveRecord: 13.4ms)
+
+
+Started POST "/api/v1/transactions" for ::1 at 2020-08-27 09:20:44 +0500
+Processing by Api::V1::TransactionsController#create as JSON
+  Parameters: {"blockNumber"=>"598778", "nonce"=>"0", "transactionIndex"=>"769", "from_id"=>2, "to_id"=>3, "value"=>"42", "gas"=>"100000", "gasPrice"=>"20000000000", "isError"=>"0", "txreceipt_status"=>"", "input"=>"0x", "contractAddress"=>"", "cumulativeGasUsed"=>"64764597", "gasUsed"=>"21000", "confirmations"=>"7972966", "transaction"=>{"nonce"=>"0", "from_id"=>2, "to_id"=>3, "value"=>"42", "gas"=>"100000", "txreceipt_status"=>"", "input"=>"0x", "confirmations"=>"7972966"}}
+Unpermitted parameters: :blockNumber, :transactionIndex, :gasPrice, :isError, :contractAddress, :cumulativeGasUsed, :gasUsed, :format, :transaction
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTransaction Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "transactions" WHERE "transactions"."from_id" = $1 AND "transactions"."to_id" = $2 LIMIT $3[0m  [["from_id", "2"], ["to_id", "3"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "transactions" ("nonce", "from_id", "to_id", "value", "gas", "txreceipt_status", "input", "confirmations", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["nonce", 0], ["from_id", "2"], ["to_id", "3"], ["value", 42], ["gas", "100000"], ["txreceipt_status", ""], ["input", "0x"], ["confirmations", "7972966"], ["created_at", "2020-08-27 04:20:44.517717"], ["updated_at", "2020-08-27 04:20:44.517717"]]
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 13ms (Views: 0.3ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/api/v1/transactions" for ::1 at 2020-08-27 09:20:57 +0500
+Processing by Api::V1::TransactionsController#index as JSON
+  Parameters: {"blockNumber"=>"598778", "nonce"=>"0", "transactionIndex"=>"769", "from_id"=>2, "to_id"=>3, "value"=>"42", "gas"=>"100000", "gasPrice"=>"20000000000", "isError"=>"0", "txreceipt_status"=>"", "input"=>"0x", "contractAddress"=>"", "cumulativeGasUsed"=>"64764597", "gasUsed"=>"21000", "confirmations"=>"7972966", "transaction"=>{"nonce"=>"0", "from_id"=>2, "to_id"=>3, "value"=>"42", "gas"=>"100000", "txreceipt_status"=>"", "input"=>"0x", "confirmations"=>"7972966"}}
+  [1m[36mTransaction Load (0.4ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions"[0m
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.4ms)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1208053861178792985)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateTransactions (20200827032825)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (32.3ms)[0m  [1m[35mDROP TABLE "transactions"[0m
+  [1m[35mSQL (1.9ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20200827032825"]]
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(1208053861178792985)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1208053861178792985)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to RemoveToIdFromTransaction (20200827040721)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.1ms)[0m  [1m[35mALTER TABLE "transactions" ADD "to_id" character varying[0m
+  [1m[35m (1.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(1208053861178792985)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1208053861178792985)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to RemoveToIdFromTransaction (20200827040721)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.9ms)[0m  [1m[35mALTER TABLE "transactions" ADD "to_id" character varying[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(1208053861178792985)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1208053861178792985)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateTransactions (20200827043045)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (30.3ms)[0m  [1m[35mCREATE TABLE "transactions" ("id" bigserial primary key, "blockNumber" integer, "timeStamp" character varying, "hash" character varying, "nonce" integer, "blockHash" character varying, "transactionIndex" integer, "from" bigint, "to" bigint, "value" integer, "gas" character varying, "gasPrice" character varying, "isError" character varying, "txreceipt_status" character varying, "input" character varying, "contractAddress" character varying, "cumulativeGasUsed" character varying, "gasUsed" character varying, "confirmations" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200827043045"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(1208053861178792985)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/api/v1/transactions" for ::1 at 2020-08-27 09:34:12 +0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::TransactionsController#create as JSON
+  Parameters: {"blockNumber"=>"598778", "timeStamp"=>"1490027136", "hash"=>"0x38d62aea47c413457b7d7318d602d1c10cc6bacb35bbb098ea9bc53fc080d1b8", "nonce"=>"0", "blockHash"=>"0x83223bd818d6ab04c27a2b86baf4d8cfc255877b6a029beced1b05d86755f89b", "transactionIndex"=>"769", "from"=>"0xb13d56676c535811ac5532e12f16da9010f719f4", "to"=>"0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a", "value"=>"42", "gas"=>"100000", "gasPrice"=>"20000000000", "isError"=>"0", "txreceipt_status"=>"", "input"=>"0x", "contractAddress"=>"", "cumulativeGasUsed"=>"64764597", "gasUsed"=>"21000", "confirmations"=>"7972966", "transaction"=>{"blockNumber"=>"598778", "timeStamp"=>"1490027136", "hash"=>"0x38d62aea47c413457b7d7318d602d1c10cc6bacb35bbb098ea9bc53fc080d1b8", "nonce"=>"0", "blockHash"=>"0x83223bd818d6ab04c27a2b86baf4d8cfc255877b6a029beced1b05d86755f89b", "transactionIndex"=>"769", "from"=>"0xb13d56676c535811ac5532e12f16da9010f719f4", "to"=>"0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a", "value"=>"42", "gas"=>"100000", "gasPrice"=>"20000000000", "isError"=>"0", "txreceipt_status"=>"", "input"=>"0x", "contractAddress"=>"", "cumulativeGasUsed"=>"64764597", "gasUsed"=>"21000", "confirmations"=>"7972966"}}
+Unpermitted parameters: :format, :transaction
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.8ms)[0m  [1m[32mINSERT INTO "transactions" ("blockNumber", "timeStamp", "hash", "nonce", "blockHash", "transactionIndex", "from", "to", "value", "gas", "gasPrice", "isError", "txreceipt_status", "input", "contractAddress", "cumulativeGasUsed", "gasUsed", "confirmations", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20) RETURNING "id"[0m  [["blockNumber", 598778], ["timeStamp", "1490027136"], ["hash", "0x38d62aea47c413457b7d7318d602d1c10cc6bacb35bbb098ea9bc53fc080d1b8"], ["nonce", 0], ["blockHash", "0x83223bd818d6ab04c27a2b86baf4d8cfc255877b6a029beced1b05d86755f89b"], ["transactionIndex", 769], ["from", 0], ["to", 0], ["value", 42], ["gas", "100000"], ["gasPrice", "20000000000"], ["isError", "0"], ["txreceipt_status", ""], ["input", "0x"], ["contractAddress", ""], ["cumulativeGasUsed", "64764597"], ["gasUsed", "21000"], ["confirmations", "7972966"], ["created_at", "2020-08-27 04:34:12.624126"], ["updated_at", "2020-08-27 04:34:12.624126"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 32ms (Views: 0.1ms | ActiveRecord: 9.9ms)
+
+
+Started GET "/api/v1/transactions" for ::1 at 2020-08-27 09:34:34 +0500
+Processing by Api::V1::TransactionsController#index as JSON
+  Parameters: {"blockNumber"=>"598778", "timeStamp"=>"1490027136", "hash"=>"0x38d62aea47c413457b7d7318d602d1c10cc6bacb35bbb098ea9bc53fc080d1b8", "nonce"=>"0", "blockHash"=>"0x83223bd818d6ab04c27a2b86baf4d8cfc255877b6a029beced1b05d86755f89b", "transactionIndex"=>"769", "from"=>"0xb13d56676c535811ac5532e12f16da9010f719f4", "to"=>"0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a", "value"=>"42", "gas"=>"100000", "gasPrice"=>"20000000000", "isError"=>"0", "txreceipt_status"=>"", "input"=>"0x", "contractAddress"=>"", "cumulativeGasUsed"=>"64764597", "gasUsed"=>"21000", "confirmations"=>"7972966", "transaction"=>{"blockNumber"=>"598778", "timeStamp"=>"1490027136", "hash"=>"0x38d62aea47c413457b7d7318d602d1c10cc6bacb35bbb098ea9bc53fc080d1b8", "nonce"=>"0", "blockHash"=>"0x83223bd818d6ab04c27a2b86baf4d8cfc255877b6a029beced1b05d86755f89b", "transactionIndex"=>"769", "from"=>"0xb13d56676c535811ac5532e12f16da9010f719f4", "to"=>"0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a", "value"=>"42", "gas"=>"100000", "gasPrice"=>"20000000000", "isError"=>"0", "txreceipt_status"=>"", "input"=>"0x", "contractAddress"=>"", "cumulativeGasUsed"=>"64764597", "gasUsed"=>"21000", "confirmations"=>"7972966"}}
+  [1m[36mTransaction Load (0.8ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions"[0m
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/api/v1/transactions" for ::1 at 2020-08-27 09:36:09 +0500
+Processing by Api::V1::TransactionsController#create as JSON
+  Parameters: {"blockNumber"=>"3669579", "timeStamp"=>"1532012251", "hash"=>"0xc109cfac0bcac786bee99074fb695673a5b641b04b0c537960137eb349a22972", "nonce"=>"3", "blockHash"=>"0xd0c63ede7e7670ffd8c197f5a22c376f2cf517fe08a408b112cfd16abc889e15", "transactionIndex"=>"6", "from"=>"0x3e298dc424b24729cc0baa09b2560b5103d47eb6", "to"=>"0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a", "value"=>"200000000000000000", "gas"=>"21000", "gasPrice"=>"4000000000", "isError"=>"0", "txreceipt_status"=>"1", "input"=>"0x", "contractAddress"=>"", "cumulativeGasUsed"=>"1821714", "gasUsed"=>"21000", "confirmations"=>"4902165", "transaction"=>{"blockNumber"=>"3669579", "timeStamp"=>"1532012251", "hash"=>"0xc109cfac0bcac786bee99074fb695673a5b641b04b0c537960137eb349a22972", "nonce"=>"3", "blockHash"=>"0xd0c63ede7e7670ffd8c197f5a22c376f2cf517fe08a408b112cfd16abc889e15", "transactionIndex"=>"6", "from"=>"0x3e298dc424b24729cc0baa09b2560b5103d47eb6", "to"=>"0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a", "value"=>"200000000000000000", "gas"=>"21000", "gasPrice"=>"4000000000", "isError"=>"0", "txreceipt_status"=>"1", "input"=>"0x", "contractAddress"=>"", "cumulativeGasUsed"=>"1821714", "gasUsed"=>"21000", "confirmations"=>"4902165"}}
+Unpermitted parameters: :format, :transaction
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.4ms)
+
+
+  
+ActiveModel::RangeError (200000000000000000 is out of range for ActiveModel::Type::Integer with limit 4 bytes):
+  
+app/controllers/api/v1/transactions_controller.rb:10:in `create'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1208053861178792985)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to RemoveValueFromTransactions (20200827043806)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.1ms)[0m  [1m[35mALTER TABLE "transactions" DROP "value"[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200827043806"]]
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(1208053861178792985)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1208053861178792985)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddValueToTransactions (20200827043903)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "transactions" ADD "value" character varying[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200827043903"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(1208053861178792985)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/api/v1/transactions" for ::1 at 2020-08-27 09:39:20 +0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::TransactionsController#create as JSON
+  Parameters: {"blockNumber"=>"3669579", "timeStamp"=>"1532012251", "hash"=>"0xc109cfac0bcac786bee99074fb695673a5b641b04b0c537960137eb349a22972", "nonce"=>"3", "blockHash"=>"0xd0c63ede7e7670ffd8c197f5a22c376f2cf517fe08a408b112cfd16abc889e15", "transactionIndex"=>"6", "from"=>"0x3e298dc424b24729cc0baa09b2560b5103d47eb6", "to"=>"0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a", "value"=>"200000000000000000", "gas"=>"21000", "gasPrice"=>"4000000000", "isError"=>"0", "txreceipt_status"=>"1", "input"=>"0x", "contractAddress"=>"", "cumulativeGasUsed"=>"1821714", "gasUsed"=>"21000", "confirmations"=>"4902165", "transaction"=>{"blockNumber"=>"3669579", "timeStamp"=>"1532012251", "hash"=>"0xc109cfac0bcac786bee99074fb695673a5b641b04b0c537960137eb349a22972", "nonce"=>"3", "blockHash"=>"0xd0c63ede7e7670ffd8c197f5a22c376f2cf517fe08a408b112cfd16abc889e15", "transactionIndex"=>"6", "from"=>"0x3e298dc424b24729cc0baa09b2560b5103d47eb6", "to"=>"0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a", "value"=>"200000000000000000", "gas"=>"21000", "gasPrice"=>"4000000000", "isError"=>"0", "txreceipt_status"=>"1", "input"=>"0x", "contractAddress"=>"", "cumulativeGasUsed"=>"1821714", "gasUsed"=>"21000", "confirmations"=>"4902165"}}
+Unpermitted parameters: :format, :transaction
+  [1m[35m (1.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 2.2ms)
+
+
+  
+ActiveModel::RangeError (200000000000000000 is out of range for ActiveModel::Type::Integer with limit 4 bytes):
+  
+app/controllers/api/v1/transactions_controller.rb:10:in `create'
+Started POST "/api/v1/transactions" for ::1 at 2020-08-27 09:39:32 +0500
+Processing by Api::V1::TransactionsController#create as JSON
+  Parameters: {"blockNumber"=>"3669579", "timeStamp"=>"1532012251", "hash"=>"0xc109cfac0bcac786bee99074fb695673a5b641b04b0c537960137eb349a22972", "nonce"=>"3", "blockHash"=>"0xd0c63ede7e7670ffd8c197f5a22c376f2cf517fe08a408b112cfd16abc889e15", "transactionIndex"=>"6", "from"=>"0x3e298dc424b24729cc0baa09b2560b5103d47eb6", "to"=>"0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a", "value"=>"200000000000000000", "gas"=>"21000", "gasPrice"=>"4000000000", "isError"=>"0", "txreceipt_status"=>"1", "input"=>"0x", "contractAddress"=>"", "cumulativeGasUsed"=>"1821714", "gasUsed"=>"21000", "confirmations"=>"4902165", "transaction"=>{"blockNumber"=>"3669579", "timeStamp"=>"1532012251", "hash"=>"0xc109cfac0bcac786bee99074fb695673a5b641b04b0c537960137eb349a22972", "nonce"=>"3", "blockHash"=>"0xd0c63ede7e7670ffd8c197f5a22c376f2cf517fe08a408b112cfd16abc889e15", "transactionIndex"=>"6", "from"=>"0x3e298dc424b24729cc0baa09b2560b5103d47eb6", "to"=>"0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a", "value"=>"200000000000000000", "gas"=>"21000", "gasPrice"=>"4000000000", "isError"=>"0", "txreceipt_status"=>"1", "input"=>"0x", "contractAddress"=>"", "cumulativeGasUsed"=>"1821714", "gasUsed"=>"21000", "confirmations"=>"4902165"}}
+Unpermitted parameters: :format, :transaction
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.5ms)
+
+
+  
+ActiveModel::RangeError (200000000000000000 is out of range for ActiveModel::Type::Integer with limit 4 bytes):
+  
+app/controllers/api/v1/transactions_controller.rb:10:in `create'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1208053861178792985)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to ChangeIntegerLimitInTransactions (20200827044201)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.4ms)[0m  [1m[35mALTER TABLE "transactions" ALTER COLUMN "value" TYPE bigint[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(1208053861178792985)[0m
+Started POST "/api/v1/transactions" for ::1 at 2020-08-27 09:43:44 +0500
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::TransactionsController#create as JSON
+  Parameters: {"blockNumber"=>"3669579", "timeStamp"=>"1532012251", "hash"=>"0xc109cfac0bcac786bee99074fb695673a5b641b04b0c537960137eb349a22972", "nonce"=>"3", "blockHash"=>"0xd0c63ede7e7670ffd8c197f5a22c376f2cf517fe08a408b112cfd16abc889e15", "transactionIndex"=>"6", "from"=>"0x3e298dc424b24729cc0baa09b2560b5103d47eb6", "to"=>"0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a", "value"=>"200000000000000000", "gas"=>"21000", "gasPrice"=>"4000000000", "isError"=>"0", "txreceipt_status"=>"1", "input"=>"0x", "contractAddress"=>"", "cumulativeGasUsed"=>"1821714", "gasUsed"=>"21000", "confirmations"=>"4902165", "transaction"=>{"blockNumber"=>"3669579", "timeStamp"=>"1532012251", "hash"=>"0xc109cfac0bcac786bee99074fb695673a5b641b04b0c537960137eb349a22972", "nonce"=>"3", "blockHash"=>"0xd0c63ede7e7670ffd8c197f5a22c376f2cf517fe08a408b112cfd16abc889e15", "transactionIndex"=>"6", "from"=>"0x3e298dc424b24729cc0baa09b2560b5103d47eb6", "to"=>"0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a", "gas"=>"21000", "gasPrice"=>"4000000000", "isError"=>"0", "txreceipt_status"=>"1", "input"=>"0x", "contractAddress"=>"", "cumulativeGasUsed"=>"1821714", "gasUsed"=>"21000", "confirmations"=>"4902165", "value"=>"200000000000000000"}}
+Unpermitted parameters: :format, :transaction
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "transactions" ("blockNumber", "timeStamp", "hash", "nonce", "blockHash", "transactionIndex", "from", "to", "gas", "gasPrice", "isError", "txreceipt_status", "input", "contractAddress", "cumulativeGasUsed", "gasUsed", "confirmations", "created_at", "updated_at", "value") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20) RETURNING "id"[0m  [["blockNumber", 3669579], ["timeStamp", "1532012251"], ["hash", "0xc109cfac0bcac786bee99074fb695673a5b641b04b0c537960137eb349a22972"], ["nonce", 3], ["blockHash", "0xd0c63ede7e7670ffd8c197f5a22c376f2cf517fe08a408b112cfd16abc889e15"], ["transactionIndex", 6], ["from", 0], ["to", 0], ["gas", "21000"], ["gasPrice", "4000000000"], ["isError", "0"], ["txreceipt_status", "1"], ["input", "0x"], ["contractAddress", ""], ["cumulativeGasUsed", "1821714"], ["gasUsed", "21000"], ["confirmations", "4902165"], ["created_at", "2020-08-27 04:43:44.763157"], ["updated_at", "2020-08-27 04:43:44.763157"], ["value", "200000000000000000"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 40ms (Views: 0.5ms | ActiveRecord: 9.4ms)
+
+
+Started GET "/api/v1/transactions" for ::1 at 2020-08-27 09:43:53 +0500
+Processing by Api::V1::TransactionsController#index as JSON
+  Parameters: {"blockNumber"=>"3669579", "timeStamp"=>"1532012251", "hash"=>"0xc109cfac0bcac786bee99074fb695673a5b641b04b0c537960137eb349a22972", "nonce"=>"3", "blockHash"=>"0xd0c63ede7e7670ffd8c197f5a22c376f2cf517fe08a408b112cfd16abc889e15", "transactionIndex"=>"6", "from"=>"0x3e298dc424b24729cc0baa09b2560b5103d47eb6", "to"=>"0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a", "value"=>"200000000000000000", "gas"=>"21000", "gasPrice"=>"4000000000", "isError"=>"0", "txreceipt_status"=>"1", "input"=>"0x", "contractAddress"=>"", "cumulativeGasUsed"=>"1821714", "gasUsed"=>"21000", "confirmations"=>"4902165", "transaction"=>{"blockNumber"=>"3669579", "timeStamp"=>"1532012251", "hash"=>"0xc109cfac0bcac786bee99074fb695673a5b641b04b0c537960137eb349a22972", "nonce"=>"3", "blockHash"=>"0xd0c63ede7e7670ffd8c197f5a22c376f2cf517fe08a408b112cfd16abc889e15", "transactionIndex"=>"6", "from"=>"0x3e298dc424b24729cc0baa09b2560b5103d47eb6", "to"=>"0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a", "gas"=>"21000", "gasPrice"=>"4000000000", "isError"=>"0", "txreceipt_status"=>"1", "input"=>"0x", "contractAddress"=>"", "cumulativeGasUsed"=>"1821714", "gasUsed"=>"21000", "confirmations"=>"4902165", "value"=>"200000000000000000"}}
+  [1m[36mTransaction Load (1.1ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions"[0m
+Completed 200 OK in 47ms (Views: 14.9ms | ActiveRecord: 32.1ms)
+
+
+Started POST "/api/v1/transactions" for ::1 at 2020-08-27 09:44:30 +0500
+Processing by Api::V1::TransactionsController#create as JSON
+  Parameters: {"blockNumber"=>"3669579", "timeStamp"=>"1532012251", "hash"=>"0xc109cfac0bcac786bee99074fb695673a5b641b04b0c537960137eb349a22972", "nonce"=>"3", "blockHash"=>"0xd0c63ede7e7670ffd8c197f5a22c376f2cf517fe08a408b112cfd16abc889e15", "transactionIndex"=>"6", "from"=>"0x3e298dc424b24729cc0baa09b2560b5103d47eb6", "to"=>"0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a", "value"=>"200000000000000000", "gas"=>"21000", "gasPrice"=>"4000000000", "isError"=>"0", "txreceipt_status"=>"1", "input"=>"0x", "contractAddress"=>"", "cumulativeGasUsed"=>"1821714", "gasUsed"=>"21000", "confirmations"=>"4902165", "transaction"=>{"blockNumber"=>"3669579", "timeStamp"=>"1532012251", "hash"=>"0xc109cfac0bcac786bee99074fb695673a5b641b04b0c537960137eb349a22972", "nonce"=>"3", "blockHash"=>"0xd0c63ede7e7670ffd8c197f5a22c376f2cf517fe08a408b112cfd16abc889e15", "transactionIndex"=>"6", "from"=>"0x3e298dc424b24729cc0baa09b2560b5103d47eb6", "to"=>"0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a", "gas"=>"21000", "gasPrice"=>"4000000000", "isError"=>"0", "txreceipt_status"=>"1", "input"=>"0x", "contractAddress"=>"", "cumulativeGasUsed"=>"1821714", "gasUsed"=>"21000", "confirmations"=>"4902165", "value"=>"200000000000000000"}}
+Unpermitted parameters: :format, :transaction
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "transactions" ("blockNumber", "timeStamp", "hash", "nonce", "blockHash", "transactionIndex", "from", "to", "gas", "gasPrice", "isError", "txreceipt_status", "input", "contractAddress", "cumulativeGasUsed", "gasUsed", "confirmations", "created_at", "updated_at", "value") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20) RETURNING "id"[0m  [["blockNumber", 3669579], ["timeStamp", "1532012251"], ["hash", "0xc109cfac0bcac786bee99074fb695673a5b641b04b0c537960137eb349a22972"], ["nonce", 3], ["blockHash", "0xd0c63ede7e7670ffd8c197f5a22c376f2cf517fe08a408b112cfd16abc889e15"], ["transactionIndex", 6], ["from", 0], ["to", 0], ["gas", "21000"], ["gasPrice", "4000000000"], ["isError", "0"], ["txreceipt_status", "1"], ["input", "0x"], ["contractAddress", ""], ["cumulativeGasUsed", "1821714"], ["gasUsed", "21000"], ["confirmations", "4902165"], ["created_at", "2020-08-27 04:44:30.079329"], ["updated_at", "2020-08-27 04:44:30.079329"], ["value", "200000000000000000"]]
+  [1m[35m (6.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 13ms (Views: 0.5ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/api/v1/transactions" for ::1 at 2020-08-27 09:45:01 +0500
+Processing by Api::V1::TransactionsController#index as JSON
+  [1m[36mTransaction Load (2.1ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions"[0m
+Completed 200 OK in 6ms (Views: 3.8ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/api/v1/transactions" for ::1 at 2020-08-27 09:46:09 +0500
+Processing by Api::V1::TransactionsController#create as JSON
+  Parameters: {"blockNumber"=>"3861673", "timeStamp"=>"1534595759", "hash"=>"0x9c832e468e26ae9026b273b23ebb897e38310dd7aef8758060dfb8b0f08a3d12", "nonce"=>"792173", "blockHash"=>"0x15b98dd82808ac81de70dbc711f4ae386fbcf6b10a955a5bb88c5c7541093778", "transactionIndex"=>"30", "from"=>"0x687422eea2cb73b5d3e242ba5456b782919afc85", "to"=>"0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a", "value"=>"1000000000000000000", "gas"=>"314150", "gasPrice"=>"1000000000", "isError"=>"0", "txreceipt_status"=>"1", "input"=>"0x", "contractAddress"=>"", "cumulativeGasUsed"=>"2752178", "gasUsed"=>"21000", "confirmations"=>"4710071", "transaction"=>{"blockNumber"=>"3861673", "timeStamp"=>"1534595759", "hash"=>"0x9c832e468e26ae9026b273b23ebb897e38310dd7aef8758060dfb8b0f08a3d12", "nonce"=>"792173", "blockHash"=>"0x15b98dd82808ac81de70dbc711f4ae386fbcf6b10a955a5bb88c5c7541093778", "transactionIndex"=>"30", "from"=>"0x687422eea2cb73b5d3e242ba5456b782919afc85", "to"=>"0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a", "gas"=>"314150", "gasPrice"=>"1000000000", "isError"=>"0", "txreceipt_status"=>"1", "input"=>"0x", "contractAddress"=>"", "cumulativeGasUsed"=>"2752178", "gasUsed"=>"21000", "confirmations"=>"4710071", "value"=>"1000000000000000000"}}
+Unpermitted parameters: :format, :transaction
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "transactions" ("blockNumber", "timeStamp", "hash", "nonce", "blockHash", "transactionIndex", "from", "to", "gas", "gasPrice", "isError", "txreceipt_status", "input", "contractAddress", "cumulativeGasUsed", "gasUsed", "confirmations", "created_at", "updated_at", "value") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20) RETURNING "id"[0m  [["blockNumber", 3861673], ["timeStamp", "1534595759"], ["hash", "0x9c832e468e26ae9026b273b23ebb897e38310dd7aef8758060dfb8b0f08a3d12"], ["nonce", 792173], ["blockHash", "0x15b98dd82808ac81de70dbc711f4ae386fbcf6b10a955a5bb88c5c7541093778"], ["transactionIndex", 30], ["from", 0], ["to", 0], ["gas", "314150"], ["gasPrice", "1000000000"], ["isError", "0"], ["txreceipt_status", "1"], ["input", "0x"], ["contractAddress", ""], ["cumulativeGasUsed", "2752178"], ["gasUsed", "21000"], ["confirmations", "4710071"], ["created_at", "2020-08-27 04:46:09.689511"], ["updated_at", "2020-08-27 04:46:09.689511"], ["value", "1000000000000000000"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 32ms (Views: 0.7ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/api/v1/transactions" for ::1 at 2020-08-27 10:13:15 +0500
+Processing by Api::V1::TransactionsController#create as JSON
+  Parameters: {"blockNumber"=>"3861673", "timeStamp"=>"1534595759", "hash"=>"0x9c832e468e26ae9026b273b23ebb897e38310dd7aef8758060dfb8b0f08a3d12", "nonce"=>"792173", "blockHash"=>"0x15b98dd82808ac81de70dbc711f4ae386fbcf6b10a955a5bb88c5c7541093778", "transactionIndex"=>"30", "from"=>"0x687422eea2cb73b5d3e242ba5456b782919afc85", "to"=>"0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a", "value"=>"1000000000000000000", "gas"=>"314150", "gasPrice"=>"1000000000", "isError"=>"0", "txreceipt_status"=>"1", "input"=>"0x", "contractAddress"=>"", "cumulativeGasUsed"=>"2752178", "gasUsed"=>"21000", "confirmations"=>"4710071", "transaction"=>{"blockNumber"=>"3861673", "timeStamp"=>"1534595759", "hash"=>"0x9c832e468e26ae9026b273b23ebb897e38310dd7aef8758060dfb8b0f08a3d12", "nonce"=>"792173", "blockHash"=>"0x15b98dd82808ac81de70dbc711f4ae386fbcf6b10a955a5bb88c5c7541093778", "transactionIndex"=>"30", "from"=>"0x687422eea2cb73b5d3e242ba5456b782919afc85", "to"=>"0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a", "gas"=>"314150", "gasPrice"=>"1000000000", "isError"=>"0", "txreceipt_status"=>"1", "input"=>"0x", "contractAddress"=>"", "cumulativeGasUsed"=>"2752178", "gasUsed"=>"21000", "confirmations"=>"4710071", "value"=>"1000000000000000000"}}
+Unpermitted parameters: :format, :transaction
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::AssociationTypeMismatch (User(#70255164225240) expected, got "0x687422eea2cb73b5d3e242ba5456b782919afc85" which is an instance of String(#70255146040860)):
+  
+app/controllers/api/v1/transactions_controller.rb:10:in `create'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1208053861178792985)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to RemoveColumnFromTransactions (20200827051706)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE "transactions" DROP "to"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "transactions" DROP "from"[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200827051706"]]
+  [1m[35m (6.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(1208053861178792985)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1208053861178792985)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddColumnsToTransactions (20200827051810)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.4ms)[0m  [1m[35mALTER TABLE "transactions" ADD "to" character varying[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "transactions" ADD "from" character varying[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200827051810"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(1208053861178792985)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/api/v1/transactions" for ::1 at 2020-08-27 10:18:43 +0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::TransactionsController#create as JSON
+  Parameters: {"blockNumber"=>"3861673", "timeStamp"=>"1534595759", "hash"=>"0x9c832e468e26ae9026b273b23ebb897e38310dd7aef8758060dfb8b0f08a3d12", "nonce"=>"792173", "blockHash"=>"0x15b98dd82808ac81de70dbc711f4ae386fbcf6b10a955a5bb88c5c7541093778", "transactionIndex"=>"30", "from"=>"0x687422eea2cb73b5d3e242ba5456b782919afc85", "to"=>"0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a", "value"=>"1000000000000000000", "gas"=>"314150", "gasPrice"=>"1000000000", "isError"=>"0", "txreceipt_status"=>"1", "input"=>"0x", "contractAddress"=>"", "cumulativeGasUsed"=>"2752178", "gasUsed"=>"21000", "confirmations"=>"4710071", "transaction"=>{"blockNumber"=>"3861673", "timeStamp"=>"1534595759", "hash"=>"0x9c832e468e26ae9026b273b23ebb897e38310dd7aef8758060dfb8b0f08a3d12", "nonce"=>"792173", "blockHash"=>"0x15b98dd82808ac81de70dbc711f4ae386fbcf6b10a955a5bb88c5c7541093778", "transactionIndex"=>"30", "from"=>"0x687422eea2cb73b5d3e242ba5456b782919afc85", "to"=>"0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a", "gas"=>"314150", "gasPrice"=>"1000000000", "isError"=>"0", "txreceipt_status"=>"1", "input"=>"0x", "contractAddress"=>"", "cumulativeGasUsed"=>"2752178", "gasUsed"=>"21000", "confirmations"=>"4710071", "value"=>"1000000000000000000"}}
+Unpermitted parameters: :format, :transaction
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTransaction Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM "transactions" WHERE "transactions"."from" = $1 LIMIT $2[0m  [["from", 0], ["LIMIT", 1]]
+  [1m[36mTransaction Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "transactions" WHERE "transactions"."to" = $1 LIMIT $2[0m  [["to", 0], ["LIMIT", 1]]
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "transactions" ("blockNumber", "timeStamp", "hash", "nonce", "blockHash", "transactionIndex", "from", "to", "gas", "gasPrice", "isError", "txreceipt_status", "input", "contractAddress", "cumulativeGasUsed", "gasUsed", "confirmations", "created_at", "updated_at", "value") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20) RETURNING "id"[0m  [["blockNumber", 3861673], ["timeStamp", "1534595759"], ["hash", "0x9c832e468e26ae9026b273b23ebb897e38310dd7aef8758060dfb8b0f08a3d12"], ["nonce", 792173], ["blockHash", "0x15b98dd82808ac81de70dbc711f4ae386fbcf6b10a955a5bb88c5c7541093778"], ["transactionIndex", 30], ["from", 0], ["to", 0], ["gas", "314150"], ["gasPrice", "1000000000"], ["isError", "0"], ["txreceipt_status", "1"], ["input", "0x"], ["contractAddress", ""], ["cumulativeGasUsed", "2752178"], ["gasUsed", "21000"], ["confirmations", "4710071"], ["created_at", "2020-08-27 05:18:44.006796"], ["updated_at", "2020-08-27 05:18:44.006796"], ["value", "1000000000000000000"]]
+  [1m[35m (6.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 35ms (Views: 0.5ms | ActiveRecord: 9.1ms)
+
+
+Started POST "/api/v1/transactions" for ::1 at 2020-08-27 10:19:25 +0500
+Processing by Api::V1::TransactionsController#create as JSON
+  Parameters: {"blockNumber"=>"3861673", "timeStamp"=>"1534595759", "hash"=>"0x9c832e468e26ae9026b273b23ebb897e38310dd7aef8758060dfb8b0f08a3d12", "nonce"=>"792173", "blockHash"=>"0x15b98dd82808ac81de70dbc711f4ae386fbcf6b10a955a5bb88c5c7541093778", "transactionIndex"=>"30", "from"=>"0x687422eea2cb73b5d3e242ba5456b782919afc85", "to"=>"0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a", "value"=>"1000000000000000000", "gas"=>"314150", "gasPrice"=>"1000000000", "isError"=>"0", "txreceipt_status"=>"1", "input"=>"0x", "contractAddress"=>"", "cumulativeGasUsed"=>"2752178", "gasUsed"=>"21000", "confirmations"=>"4710071", "transaction"=>{"blockNumber"=>"3861673", "timeStamp"=>"1534595759", "hash"=>"0x9c832e468e26ae9026b273b23ebb897e38310dd7aef8758060dfb8b0f08a3d12", "nonce"=>"792173", "blockHash"=>"0x15b98dd82808ac81de70dbc711f4ae386fbcf6b10a955a5bb88c5c7541093778", "transactionIndex"=>"30", "from"=>"0x687422eea2cb73b5d3e242ba5456b782919afc85", "to"=>"0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a", "gas"=>"314150", "gasPrice"=>"1000000000", "isError"=>"0", "txreceipt_status"=>"1", "input"=>"0x", "contractAddress"=>"", "cumulativeGasUsed"=>"2752178", "gasUsed"=>"21000", "confirmations"=>"4710071", "value"=>"1000000000000000000"}}
+Unpermitted parameters: :format, :transaction
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "transactions" ("blockNumber", "timeStamp", "hash", "nonce", "blockHash", "transactionIndex", "from", "to", "gas", "gasPrice", "isError", "txreceipt_status", "input", "contractAddress", "cumulativeGasUsed", "gasUsed", "confirmations", "created_at", "updated_at", "value") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20) RETURNING "id"[0m  [["blockNumber", 3861673], ["timeStamp", "1534595759"], ["hash", "0x9c832e468e26ae9026b273b23ebb897e38310dd7aef8758060dfb8b0f08a3d12"], ["nonce", 792173], ["blockHash", "0x15b98dd82808ac81de70dbc711f4ae386fbcf6b10a955a5bb88c5c7541093778"], ["transactionIndex", 30], ["from", 0], ["to", 0], ["gas", "314150"], ["gasPrice", "1000000000"], ["isError", "0"], ["txreceipt_status", "1"], ["input", "0x"], ["contractAddress", ""], ["cumulativeGasUsed", "2752178"], ["gasUsed", "21000"], ["confirmations", "4710071"], ["created_at", "2020-08-27 05:19:25.664061"], ["updated_at", "2020-08-27 05:19:25.664061"], ["value", "1000000000000000000"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 23ms (Views: 0.6ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/api/v1/transactions" for ::1 at 2020-08-27 10:20:05 +0500
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::TransactionsController#create as JSON
+  Parameters: {"blockNumber"=>"3861673", "timeStamp"=>"1534595759", "hash"=>"0x9c832e468e26ae9026b273b23ebb897e38310dd7aef8758060dfb8b0f08a3d12", "nonce"=>"792173", "blockHash"=>"0x15b98dd82808ac81de70dbc711f4ae386fbcf6b10a955a5bb88c5c7541093778", "transactionIndex"=>"30", "from"=>"0x687422eea2cb73b5d3e242ba5456b782919afc85", "to"=>"0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a", "value"=>"1000000000000000000", "gas"=>"314150", "gasPrice"=>"1000000000", "isError"=>"0", "txreceipt_status"=>"1", "input"=>"0x", "contractAddress"=>"", "cumulativeGasUsed"=>"2752178", "gasUsed"=>"21000", "confirmations"=>"4710071", "transaction"=>{"blockNumber"=>"3861673", "timeStamp"=>"1534595759", "hash"=>"0x9c832e468e26ae9026b273b23ebb897e38310dd7aef8758060dfb8b0f08a3d12", "nonce"=>"792173", "blockHash"=>"0x15b98dd82808ac81de70dbc711f4ae386fbcf6b10a955a5bb88c5c7541093778", "transactionIndex"=>"30", "gas"=>"314150", "gasPrice"=>"1000000000", "isError"=>"0", "txreceipt_status"=>"1", "input"=>"0x", "contractAddress"=>"", "cumulativeGasUsed"=>"2752178", "gasUsed"=>"21000", "confirmations"=>"4710071", "value"=>"1000000000000000000", "to"=>"0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a", "from"=>"0x687422eea2cb73b5d3e242ba5456b782919afc85"}}
+Unpermitted parameters: :format, :transaction
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "transactions" ("blockNumber", "timeStamp", "hash", "nonce", "blockHash", "transactionIndex", "gas", "gasPrice", "isError", "txreceipt_status", "input", "contractAddress", "cumulativeGasUsed", "gasUsed", "confirmations", "created_at", "updated_at", "value", "to", "from") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20) RETURNING "id"[0m  [["blockNumber", 3861673], ["timeStamp", "1534595759"], ["hash", "0x9c832e468e26ae9026b273b23ebb897e38310dd7aef8758060dfb8b0f08a3d12"], ["nonce", 792173], ["blockHash", "0x15b98dd82808ac81de70dbc711f4ae386fbcf6b10a955a5bb88c5c7541093778"], ["transactionIndex", 30], ["gas", "314150"], ["gasPrice", "1000000000"], ["isError", "0"], ["txreceipt_status", "1"], ["input", "0x"], ["contractAddress", ""], ["cumulativeGasUsed", "2752178"], ["gasUsed", "21000"], ["confirmations", "4710071"], ["created_at", "2020-08-27 05:20:06.137513"], ["updated_at", "2020-08-27 05:20:06.137513"], ["value", "1000000000000000000"], ["to", "0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a"], ["from", "0x687422eea2cb73b5d3e242ba5456b782919afc85"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 38ms (Views: 0.9ms | ActiveRecord: 9.1ms)
+
+
+Started POST "/api/v1/transactions" for ::1 at 2020-08-27 10:20:17 +0500
+Processing by Api::V1::TransactionsController#create as JSON
+  Parameters: {"blockNumber"=>"3861673", "timeStamp"=>"1534595759", "hash"=>"0x9c832e468e26ae9026b273b23ebb897e38310dd7aef8758060dfb8b0f08a3d12", "nonce"=>"792173", "blockHash"=>"0x15b98dd82808ac81de70dbc711f4ae386fbcf6b10a955a5bb88c5c7541093778", "transactionIndex"=>"30", "from"=>"0x687422eea2cb73b5d3e242ba5456b782919afc85", "to"=>"0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a", "value"=>"1000000000000000000", "gas"=>"314150", "gasPrice"=>"1000000000", "isError"=>"0", "txreceipt_status"=>"1", "input"=>"0x", "contractAddress"=>"", "cumulativeGasUsed"=>"2752178", "gasUsed"=>"21000", "confirmations"=>"4710071", "transaction"=>{"blockNumber"=>"3861673", "timeStamp"=>"1534595759", "hash"=>"0x9c832e468e26ae9026b273b23ebb897e38310dd7aef8758060dfb8b0f08a3d12", "nonce"=>"792173", "blockHash"=>"0x15b98dd82808ac81de70dbc711f4ae386fbcf6b10a955a5bb88c5c7541093778", "transactionIndex"=>"30", "gas"=>"314150", "gasPrice"=>"1000000000", "isError"=>"0", "txreceipt_status"=>"1", "input"=>"0x", "contractAddress"=>"", "cumulativeGasUsed"=>"2752178", "gasUsed"=>"21000", "confirmations"=>"4710071", "value"=>"1000000000000000000", "to"=>"0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a", "from"=>"0x687422eea2cb73b5d3e242ba5456b782919afc85"}}
+Unpermitted parameters: :format, :transaction
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTransaction Exists (4.6ms)[0m  [1m[34mSELECT  1 AS one FROM "transactions" WHERE "transactions"."from" = $1 LIMIT $2[0m  [["from", "0x687422eea2cb73b5d3e242ba5456b782919afc85"], ["LIMIT", 1]]
+  [1m[36mTransaction Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "transactions" WHERE "transactions"."to" = $1 LIMIT $2[0m  [["to", "0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 49ms (Views: 0.2ms | ActiveRecord: 5.7ms)
+
+
+Started POST "/api/v1/transactions" for ::1 at 2020-08-27 10:21:26 +0500
+Processing by Api::V1::TransactionsController#create as JSON
+  Parameters: {"blockNumber"=>"3861673", "timeStamp"=>"1534595759", "hash"=>"0x9c832e468e26ae9026b273b23ebb897e38310dd7aef8758060dfb8b0f08a3d12", "nonce"=>"792173", "blockHash"=>"0x15b98dd82808ac81de70dbc711f4ae386fbcf6b10a955a5bb88c5c7541093778", "transactionIndex"=>"30", "from"=>"0x3e298dc424b24729cc0baa09b2560b5103d47eb6", "to"=>"0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a", "value"=>"1000000000000000000", "gas"=>"314150", "gasPrice"=>"1000000000", "isError"=>"0", "txreceipt_status"=>"1", "input"=>"0x", "contractAddress"=>"", "cumulativeGasUsed"=>"2752178", "gasUsed"=>"21000", "confirmations"=>"4710071", "transaction"=>{"blockNumber"=>"3861673", "timeStamp"=>"1534595759", "hash"=>"0x9c832e468e26ae9026b273b23ebb897e38310dd7aef8758060dfb8b0f08a3d12", "nonce"=>"792173", "blockHash"=>"0x15b98dd82808ac81de70dbc711f4ae386fbcf6b10a955a5bb88c5c7541093778", "transactionIndex"=>"30", "gas"=>"314150", "gasPrice"=>"1000000000", "isError"=>"0", "txreceipt_status"=>"1", "input"=>"0x", "contractAddress"=>"", "cumulativeGasUsed"=>"2752178", "gasUsed"=>"21000", "confirmations"=>"4710071", "value"=>"1000000000000000000", "to"=>"0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a", "from"=>"0x3e298dc424b24729cc0baa09b2560b5103d47eb6"}}
+Unpermitted parameters: :format, :transaction
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTransaction Exists (1.6ms)[0m  [1m[34mSELECT  1 AS one FROM "transactions" WHERE "transactions"."from" = $1 LIMIT $2[0m  [["from", "0x3e298dc424b24729cc0baa09b2560b5103d47eb6"], ["LIMIT", 1]]
+  [1m[36mTransaction Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "transactions" WHERE "transactions"."to" = $1 LIMIT $2[0m  [["to", "0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 10ms (Views: 0.1ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/api/v1/transactions" for ::1 at 2020-08-27 10:21:48 +0500
+Processing by Api::V1::TransactionsController#index as JSON
+  [1m[36mTransaction Load (0.4ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions"[0m
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.4ms)
+
+
