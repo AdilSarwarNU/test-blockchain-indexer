@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-    namespace :api, defaults: {format: :json} do
+  root to: 'home#index'
+  namespace :api, defaults: {format: :json} do
       namespace :v1 do
         post '/auth/login', to: 'authentication#login'
         resources :users
@@ -11,5 +12,6 @@ Rails.application.routes.draw do
         end
       end
     end
-  get 'welcome/index'
+  #get 'welcome/index'
+   match "*path", to: 'home#index', via: :all
 end

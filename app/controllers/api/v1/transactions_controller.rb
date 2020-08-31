@@ -2,7 +2,7 @@ class Api::V1::TransactionsController < Api::V1::BaseController
   before_action :find_transaction, only: [:comments]
 
   def index
-    @transactions = Transaction.all
+    @transactions = Transaction.where('transaction_id = ?', :id).distinct
     render json: @transactions
   end
 

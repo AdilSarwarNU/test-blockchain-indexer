@@ -1512,3 +1512,847 @@ Processing by Api::V1::TransactionsController#index as JSON
 Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/" for ::1 at 2020-08-27 12:51:55 +0500
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (uninitialized constant HomeController):
+  
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.6) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.6) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-08-27 12:54:16 +0500
+  
+ActionController::RoutingError (uninitialized constant HomeController):
+  
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.6) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.6) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-08-27 12:56:34 +0500
+Processing by HomeController#index as HTML
+Completed 406 Not Acceptable in 74ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (HomeController#index is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.6) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.6) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.6) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.6) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.6) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.6) lib/active_support/callbacks.rb:108:in `block in run_callbacks'
+react-rails (2.5.0) lib/react/rails/controller_lifecycle.rb:31:in `use_react_component_helper'
+activesupport (5.1.6) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+activesupport (5.1.6) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (5.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.6) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.6) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.6) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.6) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.6) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.6) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.6) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.6) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-08-27 12:57:29 +0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 2952ms (Views: 2949.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-27 12:59:06 +0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 24ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-27 13:00:54 +0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/abubakar/Documents/test-blockchain-indexer/public/packs
+Completed 500 Internal Server Error in 2714ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Webpacker can't find vendor.js in /Users/abubakar/Documents/test-blockchain-indexer/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+  "application.js": "/packs/application-57699995ada95ae1f9f5.js",
+  "application.js.map": "/packs/application-57699995ada95ae1f9f5.js.map",
+  "server_rendering.js": "/packs/server_rendering-34b4ba348ed64b7b7972.js",
+  "server_rendering.js.map": "/packs/server_rendering-34b4ba348ed64b7b7972.js.map"
+}
+):
+     9:   </head>
+    10: 
+    11:   <body>
+    12:   <%= javascript_pack_tag 'vendor' %>
+    13:   <%= javascript_pack_tag 'login' %>
+    14:   </body>
+    15: </html>
+  
+app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___2811433760902950179_70264322718520'
+Started GET "/" for ::1 at 2020-08-27 13:01:34 +0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Webpacker can't find vendor.js in /Users/abubakar/Documents/test-blockchain-indexer/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+  "application.js": "/packs/application-57699995ada95ae1f9f5.js",
+  "application.js.map": "/packs/application-57699995ada95ae1f9f5.js.map",
+  "server_rendering.js": "/packs/server_rendering-34b4ba348ed64b7b7972.js",
+  "server_rendering.js.map": "/packs/server_rendering-34b4ba348ed64b7b7972.js.map"
+}
+):
+    11:   <body>
+    12:     <%= yield %>
+    13:   </body>
+    14:   <%= javascript_pack_tag 'vendor' %>
+    15:   <%= javascript_pack_tag 'login' %>
+    16: </html>
+  
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb___2811433760902950179_70264333806740'
+Started GET "/" for ::1 at 2020-08-27 13:03:06 +0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 45ms (Views: 42.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-27 13:06:44 +0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/abubakar/Documents/test-blockchain-indexer/public/packs
+  Rendered home/index.html.erb within layouts/application (2630.6ms)
+Completed 200 OK in 2672ms (Views: 2669.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-27 13:12:05 +0500
+  [1m[35m (6.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/abubakar/Documents/test-blockchain-indexer/public/packs
+  Rendered home/index.html.erb within layouts/application (2608.2ms)
+Completed 200 OK in 5454ms (Views: 5447.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-27 13:12:59 +0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 42ms (Views: 39.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-27 13:18:50 +0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+Invalid configuration object. Webpack has been initialised using a configuration object that does not match the API schema.
+ - configuration has an unknown property 'optimization'. These properties are valid:
+   object { amd?, bail?, cache?, context?, dependencies?, devServer?, devtool?, entry, externals?, loader?, module?, name?, node?, output?, parallelism?, performance?, plugins?, profile?, recordsInputPath?, recordsOutputPath?, recordsPath?, resolve?, resolveLoader?, stats?, target?, watch?, watchOptions? }
+   For typos: please correct them.
+   For loader options: webpack 2 no longer allows custom properties in configuration.
+     Loaders should be updated to allow passing options via loader options in module.rules.
+     Until loaders are updated one can use the LoaderOptionsPlugin to pass these options to the loader:
+     plugins: [
+       new webpack.LoaderOptionsPlugin({
+         // test: /\.xxx$/, // may apply this only for some modules
+         options: {
+           optimization: ...
+         }
+       })
+     ]
+
+
+  Rendered home/index.html.erb within layouts/application (1328.3ms)
+Completed 200 OK in 1378ms (Views: 1375.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-27 13:20:08 +0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+Invalid configuration object. Webpack has been initialised using a configuration object that does not match the API schema.
+ - configuration has an unknown property 'optimization'. These properties are valid:
+   object { amd?, bail?, cache?, context?, dependencies?, devServer?, devtool?, entry, externals?, loader?, module?, name?, node?, output?, parallelism?, performance?, plugins?, profile?, recordsInputPath?, recordsOutputPath?, recordsPath?, resolve?, resolveLoader?, stats?, target?, watch?, watchOptions? }
+   For typos: please correct them.
+   For loader options: webpack 2 no longer allows custom properties in configuration.
+     Loaders should be updated to allow passing options via loader options in module.rules.
+     Until loaders are updated one can use the LoaderOptionsPlugin to pass these options to the loader:
+     plugins: [
+       new webpack.LoaderOptionsPlugin({
+         // test: /\.xxx$/, // may apply this only for some modules
+         options: {
+           optimization: ...
+         }
+       })
+     ]
+
+
+  Rendered home/index.html.erb within layouts/application (1226.7ms)
+Completed 200 OK in 1258ms (Views: 1255.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-27 13:27:33 +0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+Invalid configuration object. Webpack has been initialised using a configuration object that does not match the API schema.
+ - configuration has an unknown property 'optimization'. These properties are valid:
+   object { amd?, bail?, cache?, context?, dependencies?, devServer?, devtool?, entry, externals?, loader?, module?, name?, node?, output?, parallelism?, performance?, plugins?, profile?, recordsInputPath?, recordsOutputPath?, recordsPath?, resolve?, resolveLoader?, stats?, target?, watch?, watchOptions? }
+   For typos: please correct them.
+   For loader options: webpack 2 no longer allows custom properties in configuration.
+     Loaders should be updated to allow passing options via loader options in module.rules.
+     Until loaders are updated one can use the LoaderOptionsPlugin to pass these options to the loader:
+     plugins: [
+       new webpack.LoaderOptionsPlugin({
+         // test: /\.xxx$/, // may apply this only for some modules
+         options: {
+           optimization: ...
+         }
+       })
+     ]
+
+
+  Rendered home/index.html.erb within layouts/application (1387.0ms)
+Completed 200 OK in 1425ms (Views: 1422.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-27 13:32:44 +0500
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+Invalid configuration object. Webpack has been initialised using a configuration object that does not match the API schema.
+ - configuration has an unknown property 'optimization'. These properties are valid:
+   object { amd?, bail?, cache?, context?, dependencies?, devServer?, devtool?, entry, externals?, loader?, module?, name?, node?, output?, parallelism?, performance?, plugins?, profile?, recordsInputPath?, recordsOutputPath?, recordsPath?, resolve?, resolveLoader?, stats?, target?, watch?, watchOptions? }
+   For typos: please correct them.
+   For loader options: webpack 2 no longer allows custom properties in configuration.
+     Loaders should be updated to allow passing options via loader options in module.rules.
+     Until loaders are updated one can use the LoaderOptionsPlugin to pass these options to the loader:
+     plugins: [
+       new webpack.LoaderOptionsPlugin({
+         // test: /\.xxx$/, // may apply this only for some modules
+         options: {
+           optimization: ...
+         }
+       })
+     ]
+
+
+  Rendered home/index.html.erb within layouts/application (1735.8ms)
+Completed 200 OK in 4822ms (Views: 4816.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for ::1 at 2020-08-27 13:33:01 +0500
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"home"}
+  Rendering home/index.html.erb within layouts/application
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+Invalid configuration object. Webpack has been initialised using a configuration object that does not match the API schema.
+ - configuration has an unknown property 'optimization'. These properties are valid:
+   object { amd?, bail?, cache?, context?, dependencies?, devServer?, devtool?, entry, externals?, loader?, module?, name?, node?, output?, parallelism?, performance?, plugins?, profile?, recordsInputPath?, recordsOutputPath?, recordsPath?, resolve?, resolveLoader?, stats?, target?, watch?, watchOptions? }
+   For typos: please correct them.
+   For loader options: webpack 2 no longer allows custom properties in configuration.
+     Loaders should be updated to allow passing options via loader options in module.rules.
+     Until loaders are updated one can use the LoaderOptionsPlugin to pass these options to the loader:
+     plugins: [
+       new webpack.LoaderOptionsPlugin({
+         // test: /\.xxx$/, // may apply this only for some modules
+         options: {
+           optimization: ...
+         }
+       })
+     ]
+
+
+  Rendered home/index.html.erb within layouts/application (819.4ms)
+Completed 200 OK in 847ms (Views: 844.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2020-08-27 13:33:07 +0500
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"login"}
+  Rendering home/index.html.erb within layouts/application
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+Invalid configuration object. Webpack has been initialised using a configuration object that does not match the API schema.
+ - configuration has an unknown property 'optimization'. These properties are valid:
+   object { amd?, bail?, cache?, context?, dependencies?, devServer?, devtool?, entry, externals?, loader?, module?, name?, node?, output?, parallelism?, performance?, plugins?, profile?, recordsInputPath?, recordsOutputPath?, recordsPath?, resolve?, resolveLoader?, stats?, target?, watch?, watchOptions? }
+   For typos: please correct them.
+   For loader options: webpack 2 no longer allows custom properties in configuration.
+     Loaders should be updated to allow passing options via loader options in module.rules.
+     Until loaders are updated one can use the LoaderOptionsPlugin to pass these options to the loader:
+     plugins: [
+       new webpack.LoaderOptionsPlugin({
+         // test: /\.xxx$/, // may apply this only for some modules
+         options: {
+           optimization: ...
+         }
+       })
+     ]
+
+
+  Rendered home/index.html.erb within layouts/application (802.7ms)
+Completed 200 OK in 828ms (Views: 825.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-27 13:33:12 +0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+Invalid configuration object. Webpack has been initialised using a configuration object that does not match the API schema.
+ - configuration has an unknown property 'optimization'. These properties are valid:
+   object { amd?, bail?, cache?, context?, dependencies?, devServer?, devtool?, entry, externals?, loader?, module?, name?, node?, output?, parallelism?, performance?, plugins?, profile?, recordsInputPath?, recordsOutputPath?, recordsPath?, resolve?, resolveLoader?, stats?, target?, watch?, watchOptions? }
+   For typos: please correct them.
+   For loader options: webpack 2 no longer allows custom properties in configuration.
+     Loaders should be updated to allow passing options via loader options in module.rules.
+     Until loaders are updated one can use the LoaderOptionsPlugin to pass these options to the loader:
+     plugins: [
+       new webpack.LoaderOptionsPlugin({
+         // test: /\.xxx$/, // may apply this only for some modules
+         options: {
+           optimization: ...
+         }
+       })
+     ]
+
+
+  Rendered home/index.html.erb within layouts/application (825.5ms)
+Completed 200 OK in 853ms (Views: 850.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-27 13:36:47 +0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+Invalid configuration object. Webpack has been initialised using a configuration object that does not match the API schema.
+ - configuration has an unknown property 'optimization'. These properties are valid:
+   object { amd?, bail?, cache?, context?, dependencies?, devServer?, devtool?, entry, externals?, loader?, module?, name?, node?, output?, parallelism?, performance?, plugins?, profile?, recordsInputPath?, recordsOutputPath?, recordsPath?, resolve?, resolveLoader?, stats?, target?, watch?, watchOptions? }
+   For typos: please correct them.
+   For loader options: webpack 2 no longer allows custom properties in configuration.
+     Loaders should be updated to allow passing options via loader options in module.rules.
+     Until loaders are updated one can use the LoaderOptionsPlugin to pass these options to the loader:
+     plugins: [
+       new webpack.LoaderOptionsPlugin({
+         // test: /\.xxx$/, // may apply this only for some modules
+         options: {
+           optimization: ...
+         }
+       })
+     ]
+
+
+  Rendered home/index.html.erb within layouts/application (1298.9ms)
+Completed 200 OK in 1344ms (Views: 1340.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-27 13:46:35 +0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+Invalid configuration object. Webpack has been initialised using a configuration object that does not match the API schema.
+ - configuration has an unknown property 'optimization'. These properties are valid:
+   object { amd?, bail?, cache?, context?, dependencies?, devServer?, devtool?, entry, externals?, loader?, module?, name?, node?, output?, parallelism?, performance?, plugins?, profile?, recordsInputPath?, recordsOutputPath?, recordsPath?, resolve?, resolveLoader?, stats?, target?, watch?, watchOptions? }
+   For typos: please correct them.
+   For loader options: webpack 2 no longer allows custom properties in configuration.
+     Loaders should be updated to allow passing options via loader options in module.rules.
+     Until loaders are updated one can use the LoaderOptionsPlugin to pass these options to the loader:
+     plugins: [
+       new webpack.LoaderOptionsPlugin({
+         // test: /\.xxx$/, // may apply this only for some modules
+         options: {
+           optimization: ...
+         }
+       })
+     ]
+
+
+  Rendered home/index.html.erb within layouts/application (1406.6ms)
+Completed 200 OK in 1447ms (Views: 1444.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-27 13:50:15 +0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+Invalid configuration object. Webpack has been initialised using a configuration object that does not match the API schema.
+ - configuration has an unknown property 'optimization'. These properties are valid:
+   object { amd?, bail?, cache?, context?, dependencies?, devServer?, devtool?, entry, externals?, loader?, module?, name?, node?, output?, parallelism?, performance?, plugins?, profile?, recordsInputPath?, recordsOutputPath?, recordsPath?, resolve?, resolveLoader?, stats?, target?, watch?, watchOptions? }
+   For typos: please correct them.
+   For loader options: webpack 2 no longer allows custom properties in configuration.
+     Loaders should be updated to allow passing options via loader options in module.rules.
+     Until loaders are updated one can use the LoaderOptionsPlugin to pass these options to the loader:
+     plugins: [
+       new webpack.LoaderOptionsPlugin({
+         // test: /\.xxx$/, // may apply this only for some modules
+         options: {
+           optimization: ...
+         }
+       })
+     ]
+
+
+  Rendered home/index.html.erb within layouts/application (1328.6ms)
+Completed 200 OK in 1359ms (Views: 1356.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-27 13:50:49 +0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+Invalid configuration object. Webpack has been initialised using a configuration object that does not match the API schema.
+ - configuration has an unknown property 'optimization'. These properties are valid:
+   object { amd?, bail?, cache?, context?, dependencies?, devServer?, devtool?, entry, externals?, loader?, module?, name?, node?, output?, parallelism?, performance?, plugins?, profile?, recordsInputPath?, recordsOutputPath?, recordsPath?, resolve?, resolveLoader?, stats?, target?, watch?, watchOptions? }
+   For typos: please correct them.
+   For loader options: webpack 2 no longer allows custom properties in configuration.
+     Loaders should be updated to allow passing options via loader options in module.rules.
+     Until loaders are updated one can use the LoaderOptionsPlugin to pass these options to the loader:
+     plugins: [
+       new webpack.LoaderOptionsPlugin({
+         // test: /\.xxx$/, // may apply this only for some modules
+         options: {
+           optimization: ...
+         }
+       })
+     ]
+
+
+  Rendered home/index.html.erb within layouts/application (1033.9ms)
+Completed 200 OK in 1064ms (Views: 1062.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-27 13:53:36 +0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+Invalid configuration object. Webpack has been initialised using a configuration object that does not match the API schema.
+ - configuration has an unknown property 'optimization'. These properties are valid:
+   object { amd?, bail?, cache?, context?, dependencies?, devServer?, devtool?, entry, externals?, loader?, module?, name?, node?, output?, parallelism?, performance?, plugins?, profile?, recordsInputPath?, recordsOutputPath?, recordsPath?, resolve?, resolveLoader?, stats?, target?, watch?, watchOptions? }
+   For typos: please correct them.
+   For loader options: webpack 2 no longer allows custom properties in configuration.
+     Loaders should be updated to allow passing options via loader options in module.rules.
+     Until loaders are updated one can use the LoaderOptionsPlugin to pass these options to the loader:
+     plugins: [
+       new webpack.LoaderOptionsPlugin({
+         // test: /\.xxx$/, // may apply this only for some modules
+         options: {
+           optimization: ...
+         }
+       })
+     ]
+
+
+  Rendered home/index.html.erb within layouts/application (1038.6ms)
+Completed 200 OK in 1071ms (Views: 1068.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-27 13:55:20 +0500
+  [1m[35m (8.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+Invalid configuration object. Webpack has been initialised using a configuration object that does not match the API schema.
+ - configuration has an unknown property 'optimization'. These properties are valid:
+   object { amd?, bail?, cache?, context?, dependencies?, devServer?, devtool?, entry, externals?, loader?, module?, name?, node?, output?, parallelism?, performance?, plugins?, profile?, recordsInputPath?, recordsOutputPath?, recordsPath?, resolve?, resolveLoader?, stats?, target?, watch?, watchOptions? }
+   For typos: please correct them.
+   For loader options: webpack 2 no longer allows custom properties in configuration.
+     Loaders should be updated to allow passing options via loader options in module.rules.
+     Until loaders are updated one can use the LoaderOptionsPlugin to pass these options to the loader:
+     plugins: [
+       new webpack.LoaderOptionsPlugin({
+         // test: /\.xxx$/, // may apply this only for some modules
+         options: {
+           optimization: ...
+         }
+       })
+     ]
+
+
+  Rendered home/index.html.erb within layouts/application (809.6ms)
+Completed 200 OK in 3422ms (Views: 3416.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-27 13:56:47 +0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+Invalid configuration object. Webpack has been initialised using a configuration object that does not match the API schema.
+ - configuration has an unknown property 'optimization'. These properties are valid:
+   object { amd?, bail?, cache?, context?, dependencies?, devServer?, devtool?, entry, externals?, loader?, module?, name?, node?, output?, parallelism?, performance?, plugins?, profile?, recordsInputPath?, recordsOutputPath?, recordsPath?, resolve?, resolveLoader?, stats?, target?, watch?, watchOptions? }
+   For typos: please correct them.
+   For loader options: webpack 2 no longer allows custom properties in configuration.
+     Loaders should be updated to allow passing options via loader options in module.rules.
+     Until loaders are updated one can use the LoaderOptionsPlugin to pass these options to the loader:
+     plugins: [
+       new webpack.LoaderOptionsPlugin({
+         // test: /\.xxx$/, // may apply this only for some modules
+         options: {
+           optimization: ...
+         }
+       })
+     ]
+
+
+  Rendered home/index.html.erb within layouts/application (1053.7ms)
+Completed 200 OK in 1088ms (Views: 1085.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-27 13:59:10 +0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+Invalid configuration object. Webpack has been initialised using a configuration object that does not match the API schema.
+ - configuration has an unknown property 'optimization'. These properties are valid:
+   object { amd?, bail?, cache?, context?, dependencies?, devServer?, devtool?, entry, externals?, loader?, module?, name?, node?, output?, parallelism?, performance?, plugins?, profile?, recordsInputPath?, recordsOutputPath?, recordsPath?, resolve?, resolveLoader?, stats?, target?, watch?, watchOptions? }
+   For typos: please correct them.
+   For loader options: webpack 2 no longer allows custom properties in configuration.
+     Loaders should be updated to allow passing options via loader options in module.rules.
+     Until loaders are updated one can use the LoaderOptionsPlugin to pass these options to the loader:
+     plugins: [
+       new webpack.LoaderOptionsPlugin({
+         // test: /\.xxx$/, // may apply this only for some modules
+         options: {
+           optimization: ...
+         }
+       })
+     ]
+
+
+  Rendered home/index.html.erb within layouts/application (1131.3ms)
+Completed 200 OK in 1174ms (Views: 1171.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-27 14:03:35 +0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/abubakar/Documents/test-blockchain-indexer/public/packs
+  Rendered home/index.html.erb within layouts/application (2668.6ms)
+Completed 200 OK in 2716ms (Views: 2713.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-27 14:04:36 +0500
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 2932ms (Views: 2925.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-27 14:05:38 +0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/abubakar/Documents/test-blockchain-indexer/public/packs
+  Rendered home/index.html.erb within layouts/application (2654.1ms)
+Completed 200 OK in 2688ms (Views: 2685.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-27 14:10:20 +0500
+  [1m[35m (7.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: 08a806a14df5ab40221f
+Version: webpack 3.12.0
+Time: 543ms
+                                       Asset       Size  Chunks             Chunk Names
+    server_rendering-49a018cfdc7f0c73a9a8.js    5.19 kB       0  [emitted]  server_rendering
+         application-1962ceafb933f3cd54a3.js    5.55 kB       1  [emitted]  application
+server_rendering-49a018cfdc7f0c73a9a8.js.map    3.85 kB       0  [emitted]  server_rendering
+     application-1962ceafb933f3cd54a3.js.map    4.27 kB       1  [emitted]  application
+                               manifest.json  302 bytes          [emitted]  
+   [2] ./app/javascript/packs/application.js 740 bytes {1} [built]
+   [3] ./app/javascript/components \.js?$ 189 bytes {1} [built]
+   [4] ./app/javascript/packs/server_rendering.js 299 bytes {0} [built]
+   [5] ./app/javascript/components ^\.\/.*$ 212 bytes {0} [built]
+    + 2 hidden modules
+
+WARNING in ./app/javascript/components/Login.js
+Module build failed: SyntaxError: Unexpected token (41:8)
+
+  39 | 
+  40 |     return (
+> 41 |         <Container component="main" maxWidth="xs">
+     |         ^
+  42 |             <CssBaseline />
+  43 |             <div className={classes.paper}>
+  44 |                 <Avatar className={classes.avatar}>
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/server_rendering.js
+
+WARNING in ./app/javascript/components/Post.js
+Module build failed: SyntaxError: Unexpected token (6:6)
+
+  4 |   render () {
+  5 |     return (
+> 6 |       <div>
+    |       ^
+  7 |         <div>Title: {this.props.title}</div>
+  8 |         <div>Body: {this.props.body}</div>
+  9 |       </div>
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/server_rendering.js
+
+ERROR in ./app/javascript/packs/server_rendering.js
+Module not found: Error: Can't resolve 'react_ujs' in '/Users/abubakar/Documents/test-blockchain-indexer/app/javascript/packs'
+ @ ./app/javascript/packs/server_rendering.js 4:20-40
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'react_ujs' in '/Users/abubakar/Documents/test-blockchain-indexer/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 13:20-40
+
+  Rendered home/index.html.erb within layouts/application (1975.2ms)
+Completed 200 OK in 5792ms (Views: 5777.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-27 14:12:02 +0500
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/abubakar/Documents/test-blockchain-indexer/public/packs
+  Rendered home/index.html.erb within layouts/application (3393.1ms)
+Completed 200 OK in 11093ms (Views: 11079.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-27 14:13:59 +0500
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/abubakar/Documents/test-blockchain-indexer/public/packs
+  Rendered home/index.html.erb within layouts/application (2179.9ms)
+Completed 200 OK in 4946ms (Views: 4939.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-27 14:14:35 +0500
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 2522ms (Views: 2516.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-27 14:20:50 +0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/abubakar/Documents/test-blockchain-indexer/public/packs
+  Rendered home/index.html.erb within layouts/application (2572.9ms)
+Completed 200 OK in 2607ms (Views: 2604.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-27 14:25:50 +0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/abubakar/Documents/test-blockchain-indexer/public/packs
+  Rendered home/index.html.erb within layouts/application (2565.3ms)
+Completed 200 OK in 2605ms (Views: 2601.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-27 16:13:38 +0500
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 4957ms (Views: 4943.8ms | ActiveRecord: 0.0ms)
+
+
